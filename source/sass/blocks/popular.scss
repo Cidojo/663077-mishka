@@ -1,0 +1,47 @@
+.popular {
+  padding: 30px;
+
+  background-color: #ffffff;
+}
+
+.popular__name {
+  margin: 0;
+
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.popular__title {
+  margin: 0;
+
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+
+  color: #63d1bb;
+  text-transform: uppercase;
+}
+
+.popular__description {
+  color: #444444;
+}
+
+.popular__price {
+  margin: 0;
+  padding: 10px 0;
+
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.popular__order-button {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+
+  color: #444444;
+  text-decoration: none;
+}

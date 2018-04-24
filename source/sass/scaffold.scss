@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "Open Sans";
+  src:
+    local("OpenSans-Regular"),
+    local("OpenSans Regular"),
+    local("Open Sans Regular"),
+    url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    local("OpenSans-Bold"),
+    local("OpenSans Bold"),
+    local("Open Sans Bold"),
+    url("../fonts/opensansbold.woff2") format("woff2"),
+    url("../fonts/opensansbold.woff") format("woff");
+  font-weight: bold;
+}
+
+body {
+  position: relative;
+
+  margin: 0 auto;
+  padding: 0;
+  width: 320px;
+
+  font-family: "Open Sans", "Tahoma", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.button {
+  display: block;
+  margin: 0;
+  padding: 14px 0;
+  width: 260px;
+  min-height: 52px;
+  box-sizing: border-box;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  box-shadow: none;
+  border: 2px solid #000000;
+  background-color: #ffffff;
+}

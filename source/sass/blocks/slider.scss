@@ -1,0 +1,34 @@
+.slider__button-wrap {
+  height: 52px;
+}
+
+.slider__button {
+  margin: 0;
+
+  padding: 14px 0;
+  width: 130px;
+  height: 52px;
+  box-sizing: border-box;
+
+  border: 1px solid #ececec;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.slider__button--prev {
+  float: left;
+
+  background-image: url("../img/icon-left-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-right: 0.5px solid #ececec;
+}
+
+.slider__button--next {
+  float: right;
+
+  background-image: url("../img/icon-right-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-left: 0.5px solid #ececec;
+}
