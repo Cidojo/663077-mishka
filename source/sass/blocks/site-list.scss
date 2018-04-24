@@ -4,7 +4,7 @@
 
   background-color: #ffffff;
 
-  list-style: none
+  list-style: none;
 }
 
 .site-list__item {
@@ -22,8 +22,8 @@
 
 .site-list__item:last-child {
   box-shadow:
-  inset 0 2px 0 0 #ececec,
-  inset 0 -2px 0 0 #ececec;
+    inset 0 2px 0 0 #ececec,
+    inset 0 -2px 0 0 #ececec;
 }
 
 .site-list__link {
