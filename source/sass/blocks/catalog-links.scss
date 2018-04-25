@@ -6,9 +6,6 @@
 }
 
 .catalog-links__item {
-  padding: 30px;
-  padding-right: 50%;
-
   background-color: #63d1bb;
 }
 
@@ -17,6 +14,10 @@
 }
 
 .catalog-links__link {
+  display: block;
+  padding: 30px;
+  padding-right: 50%;
+
   font-size: 19px;
   line-height: 24px;
   font-weight: bold;
