@@ -3,31 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>Mishka - магазин товаров ручной работы</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип магазина Mishka">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Mishka">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
+            <a class="site-list__link site-list__link--current">Каталог</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="site-list__item">
             <form class="search-form" action="https://echo.htmlacademy.ru">
-              <label class="visually-hidden" for="search-field">Поиск по сайту</label>
-              <input class="search-form__field" id="search-field" type="text" placeholder="Поиск по сайту">
+              <label class="search-form__field-label" for="search-field">Поиск по сайту</label>
+              <input class="search-form__field  visually-hidden" id="search-field" type="text" placeholder="Поиск по сайту">
               <button class="search-form__submit visually-hidden" type="submit">Найти</button>
             </form>
           </li>
-          <li class="site-list__item site-list__item--current">
-            <a>Каталог</a>
-          </li>
           <li class="site-list__item">
-            <a href="form.html">Вязание на заказ</a>
-          </li>
-          <li class="site-list__item">
-            <a class="main-nav__cart-link" href="#">Корзина: пока пуста </a>
+            <a class="site-list__link" href="#">Корзина: пока пуста </a>
           </li>
         </ul>
       </nav>
@@ -39,58 +40,60 @@
         <ul class="catalog__list">
           <li class="catalog__item">
             <a class="catalog__image-link" href="#">
-              <img class="catalog__image" src="https://placehold.it/150x100" width="150" height="100" alt="Зайчик попрыгайчик">
+              <img class="catalog__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Зайчик попрыгайчик">
             </a>
             <div class="catalog__item-description">
               <h3 class="catalog__item-title"><a class="catalog__title-link" href="#">Зайчик попрыгайчик</a></h3>
               <p class="catalog__item-properties">Рост 30 см, вес 200 г</p>
-              <p class="catalog__item-price">1200 руб.</p>
-              <button class="catalog__add-to-cart button" aria-label="Добавить в корзину">Добавить в корзину</button>
+              <p class="catalog__item-price">1 200 руб.</p>
+              <button class="catalog__add-to-cart" aria-label="Добавить в корзину">Добавить в корзину</button>
             </div>
           </li>
           <li class="catalog__item">
             <a class="catalog__image-link" href="#">
-              <img class="catalog__image" src="https://placehold.it/150x100" width="150" height="100" alt="Корзинка для белья">
+              <img class="catalog__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья">
             </a>
             <div class="catalog__item-description">
               <h3 class="catalog__item-title"><a class="catalog__title-link" href="#">Корзинка для белья</a></h3>
               <p class="catalog__item-properties">Диаметр 15 см, высота 10 см</p>
               <p class="catalog__item-price">690 руб.</p>
-              <button class="catalog__add-to-cart button" aria-label="Добавить в корзину">Добавить в корзину</button>
+              <button class="catalog__add-to-cart" aria-label="Добавить в корзину">Добавить в корзину</button>
             </div>
           </li>
           <li class="catalog__item">
             <a class="catalog__image-link" href="#">
-              <img class="catalog__image" src="https://placehold.it/150x100" width="150" height="100" alt="Зайчик попрыгайчик">
+              <img class="catalog__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка для игрушек">
             </a>
             <div class="catalog__item-description">
               <h3 class="catalog__item-title"><a class="catalog__title-link" href="#">Большая корзинка для игрушек</a></h3>
               <p class="catalog__item-properties">Диаметр 30 см, высота 30 см</p>
-              <p class="catalog__item-price">1500 руб.</p>
-              <button class="catalog__add-to-cart button" aria-label="Добавить в корзину">Добавить в корзину</button>
+              <p class="catalog__item-price">1 500 руб.</p>
+              <button class="catalog__add-to-cart" aria-label="Добавить в корзину">Добавить в корзину</button>
             </div>
           </li>
         </ul>
       </section>
       <section class="manufacturing">
-        <h2 class="manufacturing__title"></h2>
-        <div class="manufacturing__video-container">
-          <img class="manufacturing__video" src="https://placehold.it/150x100" width="150" height="100" alt="Видео производства">
+        <div class="manufacturing__wrap">
+          <h2 class="manufacturing__title">Процесс производства</h2>
+          <div class="manufacturing__video-container">
+            <img class="manufacturing__video" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Видео производства">
+          </div>
+          <p class="manufacturing__video-intro">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a class="manufacturing__make-order button" href="form.html">Сделать заказ</a>
         </div>
-        <p class="manufacturing__video-intro">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a class="manufacturing__make-order button" href="form.html">Сделать заказ<a>
       </section>
     </main>
 
     <footer class="page-footer">
       <ul class="page-footer__social social">
-        <li class="social__item"><a class="social__link social__link--instagramm" href="#" aria-label="Мы в Инстаграмм">Инстаграм</a></li>
-        <li class="social__item"><a class="social__link social__link--facebook" href="#" aria-label="Мы в Фейсбук">Фейсбук</a></li>
-        <li class="social__item"><a href="#" class="social__link social__link--twitter" aria-label="Мы в Твиттер">Твиттер</a></li>
+        <li class="social__item"><a class="social__link social__link--instagramm" href="#" aria-label="Мы в Инстаграмм"><span class="visually-hidden">Инстаграм</span></a></li>
+        <li class="social__item"><a class="social__link social__link--facebook" href="#" aria-label="Мы в Фейсбук"><span class="visually-hidden">Фейсбук</span></a></li>
+        <li class="social__item"><a href="#" class="social__link social__link--twitter" aria-label="Мы в Твиттер"><span class="visually-hidden">Твиттер</span></a></li>
       </ul>
       <div class="page-footer__copyrights copyrights">
         <h3 class="copyrights__title">Разработано</h3>
-        <a class="copyrights__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyrights__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
       </div>
     </footer>
 
@@ -112,8 +115,9 @@
             <label>L</label>
           </li>
         </ul>
-        <button class="modal-addtocart__submit" type="submit">Добавить в корзину</button>
+        <button class="modal-addtocart__submit button" type="submit">Добавить</button>
       </form>
+      <a class="modal__close"><span class="visually-hidden">Закрыть</span></a>
     </section>
 
   </body>

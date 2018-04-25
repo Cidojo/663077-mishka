@@ -1,0 +1,27 @@
+.copyrights {
+  padding: 20px 0;
+
+  text-align: center;
+}
+
+.copyrights__title {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.copyrights__link {
+  display: inline-block;
+  width: 27px;
+  height: 34px;
+
+  vertical-align: middle;
+
+  background-image: url("../img/logo-htmlacademy.svg");
+  background-repeat: no-repeat;
+}
