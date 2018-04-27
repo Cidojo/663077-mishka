@@ -2,7 +2,7 @@
   width: 100%;
 }
 
-// @media (max-width: 768px) {
+@media (max-width: 768px) {
   .main-nav__toggle {
     position: absolute;
     top: 31px;
@@ -35,7 +35,7 @@
       background-image: url("../img/icon-menu-close.svg");
     }
   }
-// }
+}
 
 .main-nav__site-navigation,
 .main-nav__site-misc {
@@ -90,8 +90,4 @@
   .main-nav__toggle {
     display: none;
   }
-  //
-  // .main-nav__site-misc {
-  //   display: block;
-  // }
 }
