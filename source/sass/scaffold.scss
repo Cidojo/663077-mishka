@@ -35,6 +35,18 @@ body {
   background-color: #ffffff;
 }
 
+@media (min-width: 768px) {
+  body {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1250px) {
+  body {
+    width: 1250px;
+  }
+}
+
 img {
   max-width: 100%;
   height: auto;

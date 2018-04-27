@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Mishka - магазин товаров ручной работы</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -12,6 +13,33 @@
         <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Mishka">
       </a>
       <nav class="main-nav">
+        <button class="main-nav__toggle main-nav__toggle--open" type="button">Открыть меню</button>
+        <div class="main-nav__wrap">
+          <button class="main-nav__toggle main-nav__toggle--close" type="button">Закрыть меню</button>
+          <ul class="main-nav__site-navigation">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__site-misc">
+            <li class="main-nav__item">
+              <form class="search-form" action="https://echo.htmlacademy.ru">
+                <label class="search-form__field-label" for="search-field">Поиск по сайту</label>
+                <input class="search-form__field  visually-hidden" id="search-field" type="text" placeholder="Поиск по сайту">
+                <button class="search-form__submit visually-hidden" type="submit">Найти</button>
+              </form>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Корзина: пока пуста </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -32,13 +60,14 @@
           </li>
         </ul>
       </nav>
+       -->
     </header>
 
     <main>
       <h1 class="visually-hidden">Mishka - магазин товаров ручной работы</h1>
       <section class="catalog-reference">
         <h2 class="visually-hidden">Ссылки на страницы каталога</h2>
-        <p class="catalog-reference__slogan">Милые штучки ручной работы для дома</p>
+        <p class="catalog-reference__slogan">Милые штуки ручной<br> работы для дома</p>
         <ul class="catalog-reference__list catalog-links">
           <li class="catalog-links__item catalog-links__item--interior"><a class="catalog-links__link" href="#">Предметы интерьера</a></li>
           <li class="catalog-links__item catalog-links__item--toys"><a class="catalog-links__link" href="#">Детские игрушки</a></li>
