@@ -1,7 +1,19 @@
 .popular {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
   padding: 30px;
 
   background-color: #ffffff;
+}
+
+.popular__header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .popular__name {
@@ -13,23 +25,43 @@
 }
 
 .popular__title {
+  width: 135px;
   margin: 0;
 
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
+  text-align: center;
 
   color: #63d1bb;
   text-transform: uppercase;
 }
 
+.popular__content-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 20px;
+}
+
 .popular__description {
+  order: 0;
+
+  margin: 0;
+  box-sizing: border-box;
+
+  text-align: left;
   color: #444444;
 }
 
 .popular__price {
+  order: 0;
+
+  width: 100%;
   margin: 0;
+  margin-top: 40px;
   padding: 10px 0;
+  box-sizing: border-box;
 
   font-size: 17px;
   line-height: 24px;
@@ -37,11 +69,123 @@
   text-align: center;
 }
 
+.popular__properties {
+  order: 0;
+
+  box-sizing: border-box;
+}
+
 .popular__order-button {
+  order: 0;
+
+  margin-top: 15px;
+
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
 
   color: #444444;
   text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .popular {
+    padding: 50px;
+  }
+
+  .popular__header {
+    justify-content: space-between;
+  }
+
+  .popular__name {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .popular__title {
+    width: 130px;
+
+    line-height: 17px;
+  }
+
+  .popular__content-wrap {
+    flex-direction: column;
+    align-content: space-between;
+    height: 404px;
+    margin-top: 50px;
+  }
+
+  .popular__description {
+    width: 292px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .popular__properties {
+    margin-top: 30px;
+    width: 292px;
+  }
+
+  .popular__image {
+    order: 1;
+
+    width: 50%;
+  }
+
+  .popular__price {
+    width: 292px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .popular__order-button {
+    width: 292px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .popular {
+    padding: 70px 50px;
+    padding-right: 50px;
+  }
+
+  .popular__header {
+    position: absolute;
+    top: 125px;
+    left: 0;
+
+    justify-content: flex-start;
+    padding: 0 70px;
+    box-sizing: border-box;
+  }
+
+  .popular__title {
+    order: -1;
+
+    margin-right: 20px;
+  }
+
+  .popular__name {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .popular__content-wrap {
+    height: 588px;
+    padding-left: 175px;
+  }
+
+  .popular__description {
+    margin-top: 110px;
+  }
+
+  .popular__properties {
+    margin-top: 40px;
+  }
+
+  .popular__price {
+    margin-top: 90px;
+  }
 }

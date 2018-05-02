@@ -1,45 +1,41 @@
 .main-nav {
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
 }
 
-@media (max-width: 768px) {
-  .main-nav__toggle {
-    position: absolute;
-    top: 31px;
-    right: 31px;
+.main-nav__toggle {
+  position: absolute;
+  top: 31px;
+  right: 31px;
 
-    display: block;
-    padding: 0;
-    margin: 0;
+  display: block;
+  padding: 0;
+  margin: 0;
 
-    font-size: 0;
+  font-size: 0;
 
-    background-color: #ffffff;
-    background-position: center;
-    background-repeat: no-repeat;
-    box-shadow: none;
-    border: none;
-    cursor: pointer;
+  background-color: #ffffff;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
 
-    &--open {
-      width: 20px;
-      height: 14px;
-      background-image: url("../img/icon-menu-open.svg");
-    }
-
-    &--close:not(:focus) {
-      display: block;
-      z-index: 0;
-      width: 21px;
-      height: 20px;
-      background-image: url("../img/icon-menu-close.svg");
-    }
+  &--open {
+    width: 20px;
+    height: 14px;
+    background-image: url("../img/icon-menu-open.svg");
   }
 }
 
 .main-nav__site-navigation,
-.main-nav__site-misc {
+.main-nav__site-misc,
+.main-nav__extra-list {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
 
@@ -48,33 +44,74 @@
   list-style: none;
 }
 
+.main-nav__extra-list .main-nav__item {
+  display: none;
+  width: 220px;
+  padding: 0;
+
+  font-size: 15px;
+}
+
+.main-nav__extra-list .main-nav__item--delivery {
+  width: auto;
+  margin-left: auto;
+
+  font-weight: normal;
+}
+
 .main-nav__item {
   position: relative;
 
-  padding: 30px 0;
+  width: 100%;
+  padding: 28px 0;
+  padding-left: 75px;
 
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
-  text-align: center;
 
   box-shadow: inset 0 1px 0 0 #ececec;
 }
 
-.main-nav__wrap {
-  display: none;
+.main-nav__item--cart {
+  position: relative;
+  flex-grow: 1;
 
-  &:hover {
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 30px;
+    left: 30px;
+
     display: block;
+    width: 21px;
+    height: 18px;
+
+    background-image: url("../img/icon-cart.svg");
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 
-.main-nav__toggle--open:focus ~ .main-nav__wrap {
-  display: block;
-}
+.main-nav__item--search {
+  position: relative;
 
-.main-nav__toggle--close:focus ~ ul {
-  display: none;
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 30px;
+    left: 30px;
+
+    display: block;
+    width: 18px;
+    height: 18px;
+
+    background-image: url("../img/icon-search.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 .main-nav__link {
@@ -83,11 +120,107 @@
 }
 
 @media (min-width: 768px) {
-  .main-nav__wrap {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__site-navigation {
+    position: absolute;
+    left: 50px;
+    bottom: -43px;
+
+    justify-content: flex-start;
+    width: 668px;
+
+    background-color: transparent;
+  }
+
+  .main-nav__site-misc {
+    order: 1;
+
+    width: auto;
+    margin-left: auto;
+  }
+
+  .main-nav__extra-list {
+    position: absolute;
+    left: 49px;
+    bottom: -43px;
+
+    display: flex;
+    justify-content: flex-end;
+    width: 668px;
+
+    background-color: transparent;
+  }
+
+  .main-nav__item {
+    width: auto;
+    padding: 30px 0;
+  }
+
+  .main-nav__extra-list .main-nav__item--delivery {
     display: block;
   }
 
-  .main-nav__toggle {
-    display: none;
+  .main-nav__site-navigation .main-nav__item {
+    width: 170px;
+    padding: 0;
+
+    font-size: 15px;
+  }
+
+  .main-nav__item--search {
+    min-width: 80px;
+    padding: 0;
+
+    &::before {
+      top: 35px;
+      left: 32px;
+    }
+  }
+
+  .main-nav__item--cart {
+    padding-left: 85px;
+    box-sizing: border-box;
+
+    &::before {
+      top: 35px;
+      left: 32px;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .main-nav__site-navigation {
+    order: 1;
+    position: relative;
+    top: 0;
+    left: 0;
+
+    width: auto;
+  }
+
+  .main-nav__site-navigation .main-nav__item {
+    width: 185px;
+    padding: 30px 0;
+
+    font-size: 17px;
+  }
+
+  .main-nav__site-navigation .main-nav__item:last-child {
+    text-align: right;
+  }
+
+  .main-nav__site-misc {
+    order: 3;
+  }
+
+  .main-nav__extra-list {
+    width: 1050px;
+  }
+
+  .main-nav__extra-list .main-nav__item {
+    display: block;
   }
 }

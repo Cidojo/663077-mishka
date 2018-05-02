@@ -4,7 +4,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-content: center;
+  min-height: 78px;
 
   line-height: 0;
 
@@ -24,11 +25,28 @@
   .page-header {
     justify-content: space-between;
 
-    padding-left: 60px;
+    padding: 0 50px;
   }
 
   .page-header__logo {
+    order: 1;
+
     width: auto;
+    padding: 26px 0;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-header {
+    padding: 0 50px;
+  }
+
+  .page-header__logo {
+    order: 2;
+
+    width: auto;
+    margin: 0 auto;
+    margin-right: 0;
     padding: 26px 0;
   }
 }

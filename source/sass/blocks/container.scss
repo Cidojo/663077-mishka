@@ -1,0 +1,17 @@
+.container {
+  width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .container {
+    width: 1150px;
+  }
+}
