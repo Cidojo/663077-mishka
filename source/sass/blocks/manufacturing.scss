@@ -6,6 +6,8 @@
 }
 
 .manufacturing__wrap {
+  display: flex;
+  flex-wrap: wrap;
   padding-bottom: 33px;
   margin-bottom: 58px;
 
@@ -83,4 +85,26 @@
   font-weight: bold;
   color: #444444;
   text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .manufacturing__video-container {
+    order: -1;
+
+    width: 682px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .manufacturing__wrap {
+    flex-direction: column;
+    align-content: space-between;
+    height: 455px;
+  }
+
+  .manufacturing__video-container {
+    order: -1;
+
+    height: 455px;
+  }
 }

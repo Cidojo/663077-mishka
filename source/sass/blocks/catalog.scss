@@ -23,6 +23,12 @@
   text-decoration: none;
 }
 
+.catalog__item {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 .catalog__item-title {
   margin: 0;
 }
@@ -30,6 +36,7 @@
 .catalog__item-description {
   position: relative;
 
+  flex-grow: 1;
   padding: 0 30px;
 
   box-shadow: inset 0 0 0 1px #ececec;
@@ -81,4 +88,15 @@
   opacity: 0.2;
 
   cursor: pointer;
+}
+
+@media (min-width: 1150px) {
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .catalog__item {
+    width: 316px;
+  }
 }
