@@ -2,6 +2,10 @@
   background-color: #f1f1f1;
 }
 
+.page-footer__wrap {
+  padding: 0 30px;
+}
+
 .page-footer__logo {
   display: none;
 }
@@ -9,10 +13,18 @@
 @media (min-width: 768px) {
   .page-footer__wrap {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 34px 50px;
+    padding-bottom: 29px;
   }
 
   .page-footer__logo {
     display: block;
+  }
+
+  .page-footer__social {
+    margin: 0;
+    margin-left: 95px;
   }
 }
