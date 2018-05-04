@@ -1,5 +1,5 @@
 .about-us {
-  padding: 30px;
+  padding: 27px 30px;
 
   background-color: #ffffff;
 }
@@ -14,8 +14,7 @@
 
 .about-us__list {
   margin: 0;
-  padding: 0;
-  padding-top: 30px;
+  padding: 27px 0;
 
   list-style: none;
 }
@@ -23,7 +22,7 @@
 .about-us__item {
   position: relative;
 
-  margin-bottom: 30px;
+  margin-bottom: 23px;
   padding-top: 60px;
 
   font-size: 17px;
@@ -48,6 +47,7 @@
   }
 
   &--ecology::before {
+    top: 5px;
     left: 8px;
 
     width: 32px;
@@ -57,6 +57,8 @@
   }
 
   &--style::before {
+    top: 6px;
+
     width: 47px;
     height: 27px;
 
@@ -64,6 +66,9 @@
   }
 
   &--social::before {
+    top: 12px;
+    left: 6px;
+
     width: 34px;
     height: 27px;
 
@@ -71,6 +76,9 @@
   }
 
   &--handmade::before {
+    top: 8px;
+    left: 2px;
+
     width: 35px;
     height: 34px;
 
@@ -78,6 +86,9 @@
   }
 
   &--national-manufacturer::before {
+    top: 9px;
+    left: -7px;
+
     width: 55px;
     height: 23px;
 
@@ -85,6 +96,9 @@
   }
 
   &--present-wrap::before {
+    top: 7px;
+    left: 3px;
+
     width: 33px;
     height: 32px;
 
@@ -94,21 +108,24 @@
 
 @media (min-width: 768px) {
   .about-us {
-    padding: 50px;
+    padding: 25px 50px;
+    padding-bottom: 32px;
   }
 
   .about-us__title {
+    margin-left: -5px;
+
     font-size: 43px;
     line-height: 50px;
   }
 
   .about-us__list {
     display: flex;
-    flex-flow: column wrap;
+    flex-wrap: wrap;
     align-content: space-between;
 
-    padding-top: 50px;
-    height: 465px;
+    padding: 45px 0;
+    padding-bottom: 0;
   }
 
   .about-us__item {
@@ -121,17 +138,42 @@
     &:last-child {
       margin-bottom: 0;
     }
-  }
 
-  &--ecology::before {
-    width: 33px;
-    height: 38px;
+    &--ecology::before {
+      width: 33px;
+      height: 38px;
+    }
+
+    &--ecology {
+      order: 1;
+    }
+
+    &--style {
+      order: 3;
+    }
+
+    &--social {
+      order: 5;
+    }
+
+    &--handmade {
+      order: 2;
+    }
+
+    &--national-manufacturer {
+      order: 4;
+    }
+
+    &--present-wrap {
+      order: 6;
+    }
   }
 }
 
 @media (min-width: 1150px) {
   .about-us {
-    padding: 70px 225px;
+    padding: 55px 225px;
+    padding-bottom: 0;
   }
 
   .about-us__title {

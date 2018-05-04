@@ -1,9 +1,7 @@
 .popular {
-  position: relative;
-
   display: flex;
   flex-wrap: wrap;
-  padding: 30px;
+  padding: 27px 30px;
 
   background-color: #ffffff;
 }
@@ -11,9 +9,6 @@
 .popular__header {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
 }
 
 .popular__name {
@@ -25,43 +20,51 @@
 }
 
 .popular__title {
-  width: 135px;
   margin: 0;
+  margin-top: 5px;
 
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
-  text-align: center;
 
   color: #63d1bb;
   text-transform: uppercase;
 }
 
-.popular__content-wrap {
+.popular__table-wrap {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  margin-top: 20px;
 }
 
 .popular__description {
-  order: 0;
-
   margin: 0;
-  box-sizing: border-box;
+  margin-top: 8px;
+  padding: 15px 0;
 
-  text-align: left;
   color: #444444;
 }
 
-.popular__price {
-  order: 0;
+.popular__properties {
+  margin-top: 2px;
+}
 
-  width: 100%;
+.popular__image-wrap {
+  margin-top: 28px;
+
+  font-size: 0;
+  line-height: 0;
+}
+
+.popular__price-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 15px 0;
+}
+
+.popular__price {
   margin: 0;
-  margin-top: 40px;
   padding: 10px 0;
-  box-sizing: border-box;
 
   font-size: 17px;
   line-height: 24px;
@@ -69,15 +72,7 @@
   text-align: center;
 }
 
-.popular__properties {
-  order: 0;
-
-  box-sizing: border-box;
-}
-
 .popular__order-button {
-  order: 0;
-
   margin-top: 15px;
 
   font-size: 17px;
@@ -90,11 +85,17 @@
 
 @media (min-width: 768px) {
   .popular {
-    padding: 50px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 47px;
   }
 
   .popular__header {
+    order: -2;
+
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
   }
 
   .popular__name {
@@ -105,43 +106,57 @@
   .popular__title {
     width: 130px;
 
+    text-align: center;
     line-height: 17px;
   }
 
-  .popular__content-wrap {
-    flex-direction: column;
-    align-content: space-between;
-    height: 404px;
-    margin-top: 50px;
+  .popular__table-wrap {
+    width: 50%;
+    padding-right: 43px;
+    box-sizing: border-box;
   }
 
   .popular__description {
-    width: 292px;
+    margin-top: 33px;
+    padding: 15px 0;
 
     font-size: 17px;
     line-height: 30px;
   }
 
   .popular__properties {
-    margin-top: 30px;
-    width: 292px;
+    margin-top: 20px;
+  }
+
+  .popular__image-wrap {
+    order: -1;
+
+    width: 50%;
+    height: 404px;
+    margin-left: 50%;
+    margin-bottom: -461px;
+    margin-top: 57px;
   }
 
   .popular__image {
-    order: 1;
+    width: 333px;
+  }
 
+  .popular__price-wrap {
     width: 50%;
+    padding: 45px 0;
+    padding-right: 43px;
+    box-sizing: border-box;
   }
 
   .popular__price {
-    width: 292px;
-
     font-size: 20px;
     line-height: 24px;
   }
 
   .popular__order-button {
     width: 292px;
+    margin-top: 25px;
   }
 }
 
@@ -149,22 +164,21 @@
   .popular {
     padding: 70px 50px;
     padding-right: 50px;
+    padding-bottom: 0;
   }
 
   .popular__header {
-    position: absolute;
-    top: 125px;
-    left: 0;
-
     justify-content: flex-start;
-    padding: 0 70px;
-    box-sizing: border-box;
+    margin-top: 53px;
+    padding: 0 20px;
   }
 
   .popular__title {
     order: -1;
 
-    margin-right: 20px;
+    width: 125px;
+    margin-right: 25px;
+    margin-top: 8px;
   }
 
   .popular__name {
@@ -172,20 +186,26 @@
     line-height: 57px;
   }
 
-  .popular__content-wrap {
-    height: 588px;
+  .popular__table-wrap {
     padding-left: 175px;
+    padding-right: 58px;
   }
 
-  .popular__description {
-    margin-top: 110px;
+  .popular__image-wrap {
+    height: 636px;
+    margin-bottom: -525px;
+    margin-top: -110px;
+  }
+
+  .popular__image {
+    width: 525px;
+  }
+
+  .popular__price-wrap {
+    padding: 99px 58px 99px 175px;
   }
 
   .popular__properties {
-    margin-top: 40px;
-  }
-
-  .popular__price {
-    margin-top: 90px;
+    margin-top: 32px;
   }
 }

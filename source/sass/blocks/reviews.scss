@@ -1,5 +1,5 @@
 .reviews {
-  padding: 30px 0;
+  padding-bottom: 50px;
 
   background-color: #ffffff;
 }
@@ -10,6 +10,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-end;
   padding: 0 30px;
 }
 
@@ -23,6 +24,7 @@
 
 .reviews__list {
   margin: 0;
+  margin-top: 25px;
   padding: 0;
 
   list-style: none;
@@ -37,7 +39,7 @@
 
 .reviews__author {
   display: block;
-  margin-top: 25px;
+  margin-top: 27px;
 
   font-size: 17px;
   line-height: 24px;
@@ -77,7 +79,7 @@
   height: 52px;
   box-sizing: border-box;
 
-  border: 1px solid #ececec;
+  border: 1px solid $border-color;
   background-color: #ffffff;
   cursor: pointer;
 
@@ -87,7 +89,7 @@
     background-image: url("../img/icon-left-arrow.svg");
     background-repeat: no-repeat;
     background-position: center;
-    border-right: 0.5px solid #ececec;
+    border-right: 0.5px solid $border-color;
   }
 
   &--next {
@@ -96,21 +98,30 @@
     background-image: url("../img/icon-right-arrow.svg");
     background-repeat: no-repeat;
     background-position: center;
-    border-left: 0.5px solid #ececec;
+    border-left: 0.5px solid $border-color;
   }
 }
 
 @media (min-width: 768px) {
   .reviews {
-    padding: 70px 0;
+    padding: 0;
+    min-height: 535px;
   }
 
   .reviews__wrapper {
     padding: 0 50px;
+    padding-top: 80px;
+    padding-bottom: 47px;
+
+    background-image: url("../../img/review-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top 0 left 0;
   }
 
   .reviews__title {
     order: 1;
+
+    margin-left: -5px;
 
     font-size: 43px;
     line-height: 50px;
@@ -119,19 +130,17 @@
   .reviews__list {
     order: 3;
 
-    min-height: 457px;
+    margin-top: 45px;
   }
 
   .reviews__content {
-    margin-top: 50px;
-
     font-size: 17px;
     line-height: 30px;
   }
 
   .reviews__author {
     display: block;
-    margin-top: 55px;
+    margin-top: 59px;
   }
 
   .reviews__button {
@@ -142,8 +151,8 @@
 
   .reviews__button-wrap {
     position: absolute;
-    bottom: 0;
-    right: 20px;
+    bottom: 47px;
+    right: 70px;
 
     width: 135px;
   }
@@ -158,24 +167,32 @@
 
 @media (min-width: 1150px) {
   .reviews {
-    padding: 50px;
+    min-height: 580px;
+    padding: 40px 50px;
   }
 
   .reviews__wrapper {
-    padding: 0;
-    padding-left: 170px;
+    padding-top: 75px;
+    padding-left: 173px;
+    padding-right: 0;
   }
 
   .reviews__title {
+    margin-left: -3px;
+
     font-size: 53px;
     line-height: 57px;
   }
 
   .reviews__author {
-    margin-top: 30px;
+    margin-top: 39px;
   }
 
   .reviews__content {
     width: 770px;
+  }
+
+  .reviews__button-wrap {
+    right: 20px;
   }
 }

@@ -1,6 +1,4 @@
 .page-header {
-  position: relative;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -9,44 +7,34 @@
 
   line-height: 0;
 
-  border-top: 1px solid #ececec;
-  border-bottom: 1px solid #ececec;
+  background-color: #ffffff;
+  border-top: 1px solid $border-color;
 }
 
 .page-header__logo {
-  display: block;
-  width: 100%;
   padding: 21px 0;
-
-  text-align: center;
 }
 
 @media (min-width: 768px) {
   .page-header {
     justify-content: space-between;
+    min-height: 88px;
 
-    padding: 0 50px;
+    border: none;
   }
 
   .page-header__logo {
     order: 1;
 
-    width: auto;
+    margin-left: 50px;
     padding: 26px 0;
   }
 }
 
 @media (min-width: 1150px) {
-  .page-header {
-    padding: 0 50px;
-  }
-
   .page-header__logo {
     order: 2;
 
-    width: auto;
     margin: 0 auto;
-    margin-right: 0;
-    padding: 26px 0;
   }
 }

@@ -1,7 +1,11 @@
 .contacts__wrapper {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 30px;
+  padding: 35px 30px;
+}
+
+.contacts__data {
+  margin-top: 20px;
 }
 
 .contacts__title {
