@@ -151,7 +151,11 @@
           </table>
         </div>
         <a class="contacts__map-link" href="#">
-          <img class="contacts__map-image" src="img/map-mobile@1x.jpg" width="322" height="457" alt="г.Санкт-Петербург, ул.Большая Конюшенная, д.19/8, офис 101">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
+            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg">
+            <img class="contacts__map-image" src="img/map-mobile@1x.jpg" width="322" height="457" alt="г.Санкт-Петербург, ул.Большая Конюшенная, д.19/8, офис 101">
+          </picture>
         </a>
         <a class="contacts__writeus button" href="#">Напишите нам</a>
       </section>
