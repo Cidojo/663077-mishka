@@ -147,8 +147,7 @@
     padding-top: 10px;
   }
 
-  .order-form__group:nth-of-type(2),
-  .order-form__group:not(:last-of-type) {
+  .order-form__group:nth-of-type(2):not(:last-of-type) {
     background-color: #f1f1f1;
   }
 
@@ -157,11 +156,12 @@
     margin-top: 15px;
 
     border: none;
-    background-color: transparent;
   }
 
   .order-form__legend-span {
     margin-top: 0;
+
+    background-color: transparent;
   }
 
   .order-form__options {
