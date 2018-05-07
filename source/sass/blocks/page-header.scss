@@ -1,3 +1,41 @@
+.page-header {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  min-height: 78px;
+
+  line-height: 0;
+
+  border-top: 1px solid $border-color;
+}
+
 .page-header__logo {
-  display: block;
+  padding: 21px 0;
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    justify-content: space-between;
+    min-height: 88px;
+
+    border: none;
+  }
+
+  .page-header__logo {
+    order: 1;
+
+    margin-left: 50px;
+    padding: 26px 0;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-header__logo {
+    order: 2;
+
+    margin: 0 auto;
+  }
 }

@@ -1,16 +1,16 @@
 .social {
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 25px 0;
 
   text-align: center;
 
   list-style: none;
-  box-shadow: 0 1px 0 0 #ececec;
+  border-bottom: 1px solid $border-color;
 }
 
 .social__item {
   display: inline-block;
-  margin-right: 41px;
+  margin-right: 37px;
 
   vertical-align: middle;
 }
@@ -42,4 +42,10 @@
   height: 20px;
   background-image: url("../img/icon-twitter.svg");
   background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .social {
+    border: none;
+  }
 }

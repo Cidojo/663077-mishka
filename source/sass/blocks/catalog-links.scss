@@ -1,4 +1,7 @@
 .catalog-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 0;
   padding: 0;
 
@@ -6,6 +9,9 @@
 }
 
 .catalog-links__item {
+  width: 100%;
+  padding: 0;
+
   background-color: #63d1bb;
 }
 
@@ -15,7 +21,7 @@
 
 .catalog-links__link {
   display: block;
-  padding: 30px;
+  padding: 25.5px 30px 29.5px;
   padding-right: 50%;
 
   font-size: 19px;
@@ -24,4 +30,24 @@
 
   color: #ffffff;
   text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .catalog-links {
+    padding: 0 50px;
+  }
+
+  .catalog-links__item {
+    width: 50%;
+    box-sizing: border-box;
+  }
+
+  .catalog-links__link {
+    padding: 27.5px 30px 31.5px;
+    padding-left: 35px;
+    padding-right: 60%;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

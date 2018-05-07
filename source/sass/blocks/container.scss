@@ -1,0 +1,41 @@
+.container {
+  width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  &--form {
+    padding: 0 30px;
+  }
+
+  &--full-width {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+
+    &--form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 50px 50px 25px;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .container {
+    width: 1150px;
+
+    &--form {
+      justify-content: flex-start;
+      padding: 50px 115px 25px;
+    }
+  }
+}

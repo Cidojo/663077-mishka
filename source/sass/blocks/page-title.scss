@@ -1,6 +1,6 @@
 .page-title {
   margin: 0;
-  padding: 73.5px 0;
+  padding: 73px 0 75px;
   width: 100%;
 
   font-size: 27px;
@@ -13,4 +13,22 @@
 
 .page-title--form-html {
   color: #231f20;
+}
+
+@media (min-width: 768px) {
+  .page-title {
+    margin-top: -63px;
+    padding-top: 97px;
+    padding-bottom: 80px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-title {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

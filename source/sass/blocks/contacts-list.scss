@@ -1,38 +1,26 @@
 .contacts-list {
+  line-height: 30px;
+
   border-collapse: collapse;
 }
 
 .contacts-list__field {
-  padding: 10px 0;
-  padding-right: 10px;
+  padding: 15px 0;
+  padding-right: 25px;
 
   text-align: left;
   vertical-align: top;
 }
 
 .contacts-list__value {
-  padding: 10px 0;
+  padding: 15px 5px;
 
   text-align: left;
   vertical-align: top;
 }
 
-.contacts__map-link {
-  position: relative;
-
-  display: block;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 140px;
-    left: 138px;
-
-    display: block;
-    width: 67px;
-    height: 100px;
-
-    background-image: url("../img/icon-map-pin.svg");
-    background-repeat: no-repeat;
+@media (min-width: 768px) {
+  .contacts-list__value {
+    padding: 15px 0;
   }
 }
