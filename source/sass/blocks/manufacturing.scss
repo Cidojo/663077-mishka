@@ -1,15 +1,11 @@
 .manufacturing {
-  padding: 0 30px;
-
-  background-color: #ffffff;
-}
-
-.manufacturing__wrap {
   display: flex;
   flex-direction: column;
-  padding-bottom: 33px;
   margin-bottom: 58px;
+  padding: 0 30px;
+  padding-bottom: 33px;
 
+  background-color: #ffffff;
   border-top: 1px solid $border-color;
   border-bottom: 1px solid $border-color;
 }
@@ -66,7 +62,6 @@
   }
 }
 
-
 .manufacturing__video-intro {
   margin: 0;
   margin-top: 27px;
@@ -94,6 +89,7 @@
 
 @media (min-width: 768px) {
   .manufacturing {
+    min-height: 455px;
     padding: 0 50px;
   }
 
@@ -145,14 +141,12 @@
 }
 
 @media (min-width: 1150px) {
-  .manufacturing__wrap {
-    flex-direction: column;
+  .manufacturing {
     align-items: flex-end;
-    height: 455px;
   }
 
   .manufacturing__title {
-    width: 365px;
+    width: 367px;
     box-sizing: border-box;
     margin: 0;
     padding: 38px 107px 32px;
@@ -162,7 +156,7 @@
   }
 
   .manufacturing__video-intro {
-    width: 365px;
+    width: 367px;
     box-sizing: border-box;
     margin: 0;
     padding: 0 40px;
@@ -174,17 +168,15 @@
   .manufacturing__video-container {
     order: -1;
 
+    width: 682px;
     height: 455px;
     margin-bottom: -425px;
-  }
-
-  .manufacturing__video {
-    width: 685px;
-    margin-right: 685px;
+    margin-right: 367px;
   }
 
   .manufacturing__make-order {
-    width: 260px;
+    width: 230px;
     margin-top: 35px;
+    margin-right: 57px;
   }
 }

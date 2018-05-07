@@ -164,9 +164,8 @@
 
 @media (min-width: 1150px) {
   .popular {
-    padding: 70px 50px;
+    padding: 70px 50px 99px;
     padding-right: 50px;
-    padding-bottom: 0;
   }
 
   .popular__header {
@@ -204,7 +203,7 @@
   }
 
   .popular__price-wrap {
-    padding: 99px 58px 99px 175px;
+    padding: 99px 58px 0 175px;
   }
 
   .popular__properties {

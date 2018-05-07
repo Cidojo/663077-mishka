@@ -1,5 +1,39 @@
-.form__wrap {
-  padding: 23px 30px 60px;
+.form {
+  padding: 25px 0;
 
   background-color: #ffffff;
+}
+
+.form__intro {
+  width: 260px;
+  margin: 0;
+
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: normal;
+
+  color: #444444;
+}
+
+@media (min-width: 768px) {
+  .form {
+    padding-top: 70px;
+  }
+
+  .form__intro {
+    width: 668px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .form {
+    padding-top: 145px;
+  }
+
+  .form__intro {
+    width: 700px;
+  }
 }
