@@ -198,7 +198,7 @@
     &--comment {
       align-items: baseline;
       margin: 0;
-      padding: 52px 0 52px;
+      padding: 52px 52px;
     }
   }
 
@@ -302,7 +302,7 @@
 
     margin-left: 174px;
 
-    &--type {
+    &--color {
       width: 766px;
     }
 
@@ -319,7 +319,8 @@
     &--comment {
       align-items: baseline;
       margin: 0;
-      padding: 52px 0 52px;
+      padding: 53px 175px 50px 0;
+      box-sizing: border-box;
     }
   }
 
@@ -333,5 +334,15 @@
   .order-form__list--comment .order-form__legend {
     width: 174px;
     padding: 0;
+  }
+
+  .order-form__list--comment .order-form__field {
+    flex-grow: 0;
+    width: 700px;
+  }
+
+  .order-form__misc {
+    padding: 0 175px;
+    box-sizing: border-box;
   }
 }
