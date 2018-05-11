@@ -1,15 +1,10 @@
 .contacts {
-  padding-top: 40px;
-}
-
-.contacts__data {
-  margin: 0 30px;
-  margin-top: 11px;
+  padding: 35px 0 40px;
 }
 
 .contacts__title {
-  margin: 0;
-  padding: 0 30px;
+  width: 260px;
+  margin: 0 auto;
 
   font-size: 18px;
   line-height: 30px;
@@ -18,18 +13,24 @@
   background-color: #ffffff;
 }
 
+.contacts__data {
+  width: 260px;
+  margin: 0 auto;
+  margin-top: 11px;
+}
+
 .contacts__map-link {
   position: relative;
 
   display: block;
-  margin-top: 25px;
+  margin-top: 21px;
 
   line-height: 0;
 
   &::before {
     content: "";
     position: absolute;
-    top: 140px;
+    top: 145px;
     left: 138px;
 
     display: block;
@@ -42,8 +43,8 @@
 }
 
 .contacts__writeus {
-  margin: 40px auto;
-  align-self: flex-end;
+  margin: 0 auto;
+  margin-top: 42px;
 
   font-size: 17px;
   line-height: 20px;
@@ -57,13 +58,13 @@
   .contacts {
     position: relative;
 
-    padding: 65px 0;
-    padding-bottom: 17px;
+    padding-top: 62px;
+    padding-bottom: 57px;
 
     &::before {
       content: "";
       position: absolute;
-      top: 44px;
+      top: 47px;
       right: 53px;
 
       display: block;
@@ -86,7 +87,7 @@
   .contacts__data {
     width: 665px;
     margin: 0 50px;
-    margin-top: 33px;
+    margin-top: 34px;
 
     font-size: 17px;
     line-height: 30px;
@@ -104,6 +105,7 @@
     margin-top: 41px;
 
     &::before {
+      top: 140px;
       left: 364px;
     }
   }
@@ -122,8 +124,8 @@
   .contacts {
     display: flex;
     flex-direction: column;
-    padding: 80px 50px;
-    padding-bottom: 65px;
+    padding: 70px 50px;
+    padding-bottom: 104px;
 
     &::before {
       top: 130px;

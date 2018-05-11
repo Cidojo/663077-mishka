@@ -1,10 +1,12 @@
 .container {
   width: 320px;
   margin: 0 auto;
+  padding: 0 30px;
   box-sizing: border-box;
 
   &--form {
-    padding: 0 30px;
+    width: 260px;
+    margin: 0 auto;
   }
 
   &--full-width {
@@ -16,26 +18,25 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .container {
-    width: 768px;
+    width: $tablet-width;
+    padding: 0 50px;
 
     &--form {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      padding: 50px 50px 25px;
+      width: 668px;
     }
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .container {
-    width: 1150px;
+    width: $desktop-width;
+    padding: 0 50px;
 
     &--form {
-      justify-content: flex-start;
-      padding: 50px 115px 25px;
+      width: 1050px;
+      padding: 0 100px;
     }
   }
 }

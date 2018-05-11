@@ -1,6 +1,5 @@
 .copyrights {
-  padding: 20px 0;
-  padding-top: 25px;
+  padding: 23px 0;
 
   font-size: 0;
   text-align: center;
@@ -10,12 +9,12 @@
   display: inline-block;
   margin: 0;
   margin-right: 30px;
-  padding: 0;
+  padding: 6px 0;
 
   font-size: 19px;
   line-height: 18px;
   font-weight: bold;
-  vertical-align: middle;
+  vertical-align: top;
 }
 
 .copyrights__link {
@@ -28,4 +27,10 @@
 
   background-image: url("../img/logo-htmlacademy.svg");
   background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .copyrights__title {
+    padding-top: 13px;
+  }
 }

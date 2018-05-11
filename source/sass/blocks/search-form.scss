@@ -1,5 +1,46 @@
-@media (min-width: 768px) {
-  .search-form__field-label {
-    display: none;
+.search-form {
+  position: relative;
+}
+
+.search-form__field-label::before {
+  content: "";
+
+  position: absolute;
+  top: 4px;
+  left: -44px;
+
+  display: block;
+  width: 18px;
+  height: 18px;
+
+  background-image: url("../img/icon-search.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.search-form__field {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .search-form__field-label::before {
+    top: 37px;
+    left: 32px;
+  }
+
+  .search-form__field-label span {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
   }
 }

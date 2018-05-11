@@ -2,10 +2,6 @@
   background-color: #f1f1f1;
 }
 
-.page-footer__wrap {
-  padding: 0 30px;
-}
-
 .page-footer__logo {
   display: none;
 }
@@ -15,16 +11,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 34px 50px;
-    padding-bottom: 29px;
+    padding-top: 34px;
+    padding-bottom: 32px;
   }
 
   .page-footer__logo {
     display: block;
   }
 
+  .page-footer__logo-image {
+    width: 102px;
+  }
+
   .page-footer__social {
     margin: 0;
-    margin-left: 95px;
+    margin-left: 80px;
   }
 }

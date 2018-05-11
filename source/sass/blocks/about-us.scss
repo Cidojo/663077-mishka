@@ -1,7 +1,6 @@
 .about-us {
-  padding: 27px 30px;
-
-  background-color: #ffffff;
+  padding-top: 25px;
+  padding-bottom: 53px;
 }
 
 .about-us__title {
@@ -14,7 +13,8 @@
 
 .about-us__list {
   margin: 0;
-  padding: 27px 0;
+  margin-top: 27px;
+  padding: 0;
 
   list-style: none;
 }
@@ -108,8 +108,8 @@
 
 @media (min-width: 768px) {
   .about-us {
-    padding: 25px 50px;
-    padding-bottom: 32px;
+    padding-top: 48px;
+    padding-bottom: 82px;
   }
 
   .about-us__title {
@@ -124,8 +124,7 @@
     flex-wrap: wrap;
     align-content: space-between;
 
-    padding: 45px 0;
-    padding-bottom: 0;
+    margin-top: 45px;
   }
 
   .about-us__item {
@@ -135,7 +134,7 @@
     font-size: 20px;
     line-height: 22px;
 
-    &:last-child {
+    &:nth-child(3n) {
       margin-bottom: 0;
     }
 
@@ -173,11 +172,14 @@
 @media (min-width: 1150px) {
   .about-us {
     padding: 55px 225px;
-    padding-bottom: 0;
   }
 
   .about-us__title {
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .about-us__list {
+    margin-top: 43px;
   }
 }
