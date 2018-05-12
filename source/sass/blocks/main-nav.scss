@@ -11,6 +11,8 @@
 .main-nav__site-navigation,
 .main-nav__site-misc,
 .main-nav__extra-list {
+  z-index: 1;
+
   display: flex;
   flex-wrap: wrap;
   margin: 0;

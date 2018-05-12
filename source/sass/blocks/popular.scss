@@ -1,5 +1,10 @@
-.popular {
+.popular__wrap {
   position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 27px;
+  padding-bottom: 45px;
 
   &::after {
     content: "";
@@ -8,21 +13,14 @@
     left: 0;
     bottom: 0;
 
-    width: 100%;
+    width: 320px;
     height: 9px;
 
     background-image: url("../img/bg-zigzag-line.svg");
     background-size: 319px 9px;
-    background-position-x: -2px;
+    background-position-x: 9px;
     background-repeat-y: no-repeat;
   }
-}
-
-.popular__wrap {
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 27px;
-  padding-bottom: 45px;
 }
 
 .popular__header {
@@ -104,18 +102,19 @@
 }
 
 @media (min-width: 768px) {
-  .popular::after {
-    height: 17px;
-
-    background-size: 772px 17px;
-    // background-position-x: -2px;
-  }
-
   .popular__wrap {
     flex-direction: column;
     justify-content: center;
     padding-top: 45px;
     padding-bottom: 70px;
+
+    &:after {
+      height: 17px;
+      width: 768px;
+
+      background-size: 772px 17px;
+      background-position-x: 17px;
+    }
   }
 
   .popular__header {
@@ -190,15 +189,19 @@
 }
 
 @media (min-width: 1150px) {
-  .popular::after {
-    height: 26px;
-
-    background-size: 1050px 26px;
-  }
-
   .popular__wrap {
     padding-top: 70px;
     padding-bottom: 100px;
+
+    &:after {
+      left: auto;
+
+      height: 30px;
+      width: 1050px;
+
+      background-size: 1050px 26px;
+      background-position-x: 26px;
+    }
   }
 
   .popular__header {

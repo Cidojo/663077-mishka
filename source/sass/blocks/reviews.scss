@@ -1,25 +1,5 @@
 .reviews {
-  position: relative;
-
-  padding-bottom: 52px;
-
   background-color: #ffffff;
-
-  &::after {
-    content: "";
-
-    position: absolute;
-    left: 0;
-    bottom: 0;
-
-    width: 100%;
-    height: 9px;
-
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-size: 319px 9px;
-    background-position-x: -2px;
-    background-repeat-y: no-repeat;
-  }
 }
 
 .reviews__wrapper {
@@ -28,6 +8,23 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-bottom: 52px;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 320px;
+    height: 9px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: 319px 9px;
+    background-position-x: 9px;
+    background-repeat-y: no-repeat;
+  }
 }
 
 .reviews__title {
@@ -119,24 +116,27 @@
 }
 
 @media (min-width: 768px) {
-  .reviews {
-    padding-bottom: 0;
-
-    &::after {
-      height: 17px;
-
-      background-size: 772px 17px;
-    }
-  }
-
   .reviews__wrapper {
     min-height: 457px;
     padding-top: 78px;
     padding-bottom: 130px;
 
-    background-image: url("../../img/review-tablet@1x.jpg");
+    background-image: url("../../img/review@1x.jpg");
     background-repeat: no-repeat;
-    background-position: top 0 left 0;
+    background-position: 0 0;
+
+    &:after {
+      height: 17px;
+      width: 768px;
+
+      background-size: 772px 17px;
+      background-position-x: 17px;
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
   }
 
   .reviews__title {
@@ -192,12 +192,6 @@
 @media (min-width: 1150px) {
   .reviews {
     padding-top: 36px;
-
-    &::after {
-      height: 26px;
-
-      background-size: 1050px 26px;
-    }
   }
 
   .reviews__wrapper {
@@ -206,6 +200,16 @@
     padding-bottom: 186px;
 
     background-position-x: 50px;
+
+    &:after {
+      left: 50px;
+
+      height: 26px;
+      width: 1050px;
+
+      background-size: 1050px 26px;
+      background-position-x: 26px;
+    }
   }
 
   .reviews__title {

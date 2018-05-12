@@ -61,8 +61,8 @@
           <h2 class="visually-hidden">Форма заказа</h2>
           <p class="form-main__intro container">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
           <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
-            <div class="order-form__group-wrap container--full-width">
-              <fieldset class="order-form__group container--form">
+            <div class="order-form__group-wrap">
+              <fieldset class="order-form__group container container--form">
                 <legend><span class="order-form__legend">Тип</span></legend>
                   <ul class="order-form__list order-form__list--type" role="none">
                     <li class="order-form__item">
@@ -76,8 +76,8 @@
                   </ul>
               </fieldset>
             </div>
-            <div class="order-form__group-wrap container--full-width">
-              <fieldset class="order-form__group container--form">
+            <div class="order-form__group-wrap">
+              <fieldset class="order-form__group container container--form">
                   <legend><span class="order-form__legend">Цвет</span></legend>
                   <ul class="order-form__list order-form__list--color" role="none">
                     <li class="order-form__item">
@@ -107,8 +107,8 @@
                   </ul>
                 </fieldset>
               </div>
-              <div class="order-form__group-wrap container--full-width">
-                <fieldset class="order-form__group container--form">
+              <div class="order-form__group-wrap">
+                <fieldset class="order-form__group container container--form">
                   <legend><span class="order-form__legend">ФИО</span></legend>
                   <ul class="order-form__list order-form__list--name" role="none">
                     <li class="order-form__item">
@@ -126,28 +126,28 @@
                   </ul>
                 </fieldset>
               </div>
-              <div class="order-form__group-wrap container--full-width">
-                <fieldset class="order-form__group container--form">
+              <div class="order-form__group-wrap">
+                <fieldset class="order-form__group container container--form">
                   <legend class="visually-hidden"><span>Ваши Контакты</span></legend>
                   <ul class="order-form__list order-form__list--contacts">
-                    <li class="order-form__item">
+                    <li class="order-form__item order-form__item--phone">
                       <label class="order-form__legend" for="customer-phone">Тел</label>
                       <input class="order-form__field" id="customer-phone" type="tel" name="customer-phone" placeholder="+7 XXX XX XX*" required>
                     </li>
-                    <li class="order-form__item">
+                    <li class="order-form__item order-form__item--mail">
                       <label class="order-form__legend" for="customer-email">E&#8209;mail</label>
                       <input class="order-form__field" id="customer-email" type="email" name="customer-email" placeholder="Ваш Email*" required>
                     </li>
                   </ul>
                 </fieldset>
               </div>
-              <div class="order-form__group-wrap container--full-width">
-                <div class="order-form__list order-form__list--comment container--form">
+              <div class="order-form__group-wrap">
+                <div class="order-form__list order-form__list--comment container container--form">
                   <label class="order-form__legend order-form__legend--comment" for="order-comment">Доп</label>
                   <textarea class="order-form__field" id="order-comment" name="order-comment" rows="7" placeholder="Опишите все ваши пожелания к заказу"></textarea>
                 </div>
               </div>
-              <div class="order-form__misc container--form">
+              <div class="order-form__misc container container--form">
                 <small class="order-form__instruction">*Поля обязательны для заполнения</small>
                 <button class="order-form__send button" type="submit">Отправить заказ</button>
               </div>

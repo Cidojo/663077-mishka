@@ -99,7 +99,7 @@
   cursor: pointer;
 }
 
-@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+@media (min-width: $tablet-width) and (max-width: 1149px) {
   .catalog {
     padding-top: 80px;
     padding-bottom: 50px;
