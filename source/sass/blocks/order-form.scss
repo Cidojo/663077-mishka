@@ -114,7 +114,7 @@
     width: 25px;
     height: 24px;
 
-    background-image: url("../../img/icon-phone.svg");
+    background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -129,7 +129,7 @@
     width: 32px;
     height: 21px;
 
-    background-image: url("../../img/icon-mail.svg");
+    background-image: url("../img/icon-mail.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -184,7 +184,7 @@
 }
 
 .order-form__list--color input:checked + label::before {
-  background-image: url("../../img/icon-tick.svg");
+  background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 22px 16px;
@@ -368,6 +368,10 @@
       width: 54px;
       height: 52px;
     }
+  }
+
+  .order-form__list--type input:checked + label::before {
+    box-shadow: inset 0 0 0 13.5px #ffffff;
   }
 
   .order-form__list--color input:checked + label::before {
