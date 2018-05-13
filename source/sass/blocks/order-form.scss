@@ -194,6 +194,7 @@
 
 .order-form__list--contacts .order-form__legend,
 .order-form__list--comment .order-form__legend {
+  align-self: flex-start;
   display: block;
   margin-top: -10px;
 }
