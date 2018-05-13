@@ -1,7 +1,4 @@
 .order-form__group-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   width: 100%;
   margin: 0 auto;
 }
@@ -15,8 +12,12 @@
   border-top: 1px solid $form-border;
 }
 
+.order-form__group legend {
+  margin-top: -10px;
+}
+
 .order-form__legend {
-  align-self: flex-start;
+  display: block;
   min-width: 42px;
   padding-right: 25px;
 
@@ -32,21 +33,22 @@
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
-  margin: 0;
+  width: 260px;
+  margin: 0 auto;
   padding: 0;
 
   list-style: none;
 
   &--type {
-    padding: 30px 0 39px;
+    padding: 34px 0 43px;
   }
 
   &--color {
-    padding: 30px 0 35px;
+    padding: 34px 0 39px;
   }
 
   &--name {
-    padding: 20px 0 40px;
+    padding: 24px 0 40px;
   }
 
   &--contacts {
@@ -262,6 +264,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    min-width: 502px;
     margin-left: 167px;
 
     &--type {
@@ -277,17 +280,23 @@
     }
 
     &--contacts {
+      width: 668px;
       margin: 0;
       padding: 41px 0 49px;
     }
 
     &--comment {
       align-items: baseline;
-      margin: 0;
+      width: 668px;
+      margin: 0 auto;
       padding: 52px 0;
 
       border: none;
     }
+  }
+
+  .order-form__group legend {
+    margin-top: 0;
   }
 
   .order-form__item {
@@ -423,6 +432,10 @@
 
     margin-left: 174px;
 
+    &--type {
+      width: 766px;
+    }
+
     &--color {
       width: 766px;
     }
@@ -439,7 +452,8 @@
 
     &--comment {
       align-items: baseline;
-      margin: 0;
+      width: 1050px;
+      margin: 0 auto;
       padding: 51px 175px 50px 0;
       box-sizing: border-box;
     }

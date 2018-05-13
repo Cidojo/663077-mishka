@@ -16,6 +16,14 @@
 .page-header__logo {
   display: block;
   padding: 21px 0 22px;
+
+  &[href]:hover {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: 768px) {

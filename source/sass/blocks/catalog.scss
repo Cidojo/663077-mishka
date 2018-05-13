@@ -30,6 +30,14 @@
   line-height: 0;
 }
 
+.catalog__image-link:hover + .catalog__item-description {
+  box-shadow: 0 6px 10px 0 #ececec;
+}
+
+.catalog__image-link:active + .catalog__item-description {
+  box-shadow: 0 3px 5px 0 #ececec;
+}
+
 .catalog__item-description {
   position: relative;
 
@@ -52,6 +60,14 @@
   font-weight: bold;
   color: #000000;
   text-decoration: none;
+
+  &:hover {
+    color: rgba(0,0,0,0.6);
+  }
+
+  &:active {
+    color: rgba(0,0,0,0.3);
+  }
 }
 
 .catalog__item-properties {
