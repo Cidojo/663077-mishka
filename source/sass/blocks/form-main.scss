@@ -1,0 +1,36 @@
+.form-main {
+  padding-bottom: 56px;
+
+  background-color: #ffffff;
+}
+
+.form-main__intro {
+  padding-top: 21px;
+  padding-bottom: 24px;
+
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: normal;
+
+  color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .form-main {
+    padding-bottom: 50px;
+  }
+
+  .form-main__intro {
+    padding-top: 71px;
+    padding-bottom: 6px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-main__intro {
+    padding: 120px 225px 6px;
+  }
+}

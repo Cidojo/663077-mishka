@@ -1,21 +1,23 @@
 .copyrights {
-  padding: 20px 0;
-  padding-top: 25px;
+  margin-top: 25px;
+  padding-top: 21px;
 
   font-size: 0;
   text-align: center;
+
+  border-top: 1px solid $border-color;
 }
 
 .copyrights__title {
   display: inline-block;
   margin: 0;
   margin-right: 30px;
-  padding: 0;
+  padding: 6px 0;
 
   font-size: 19px;
   line-height: 18px;
   font-weight: bold;
-  vertical-align: middle;
+  vertical-align: top;
 }
 
 .copyrights__link {
@@ -28,4 +30,13 @@
 
   background-image: url("../img/logo-htmlacademy.svg");
   background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .copyrights {
+    margin: 0;
+    padding: 25px 0;
+
+    border-top: none;
+  }
 }

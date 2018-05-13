@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-end;
   margin: 0;
   padding: 0;
 
@@ -13,6 +14,10 @@
   padding: 0;
 
   background-color: #63d1bb;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
 }
 
 .catalog-links__item:nth-of-type(2n) {
@@ -20,6 +25,8 @@
 }
 
 .catalog-links__link {
+  position: relative;
+
   display: block;
   padding: 25.5px 30px 29.5px;
   padding-right: 50%;
@@ -30,6 +37,54 @@
 
   color: #ffffff;
   text-decoration: none;
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.catalog-links__item--interior .catalog-links__link::after {
+  content: "";
+
+  position: absolute;
+  top: 23px;
+  right: 36px;
+
+  display: block;
+  width: 40px;
+  height: 62px;
+
+  background-image: url("../img/icon-interior.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  opacity: 0.5;
+}
+
+.catalog-links__item--toys .catalog-links__link::after {
+  content: "";
+
+  position: absolute;
+  top: 21px;
+  right: 27px;
+
+  display: block;
+  width: 60px;
+  height: 60px;
+
+  background-image: url("../img/icon-toy.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  opacity: 0.5;
+}
+
+.catalog-links__link:hover::after {
+  opacity: 0.7;
+}
+
+.catalog-links__link:active::after {
+  opacity: 0.3;
 }
 
 @media (min-width: 768px) {
@@ -49,5 +104,15 @@
 
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .catalog-links__item--interior .catalog-links__link::after {
+    top: 30px;
+    right: 36px;
+  }
+
+  .catalog-links__item--toys .catalog-links__link::after {
+    top: 32px;
+    right: 34px;
   }
 }

@@ -1,9 +1,26 @@
-.popular {
+.popular__wrap {
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
-  padding: 30px;
+  padding-top: 27px;
+  padding-bottom: 45px;
 
-  background-color: #ffffff;
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 320px;
+    height: 9px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: 319px 9px;
+    background-position: bottom center;
+    background-repeat: repeat-x;
+  }
 }
 
 .popular__header {
@@ -40,14 +57,13 @@
 
 .popular__description {
   margin: 0;
-  margin-top: 8px;
-  padding: 15px 0;
+  margin-top: 23px;
 
   color: #444444;
 }
 
 .popular__properties {
-  margin-top: 2px;
+  margin-top: 16px;
 }
 
 .popular__image-wrap {
@@ -61,7 +77,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 15px 0;
+  margin-top: 14px;
 }
 
 .popular__price {
@@ -86,10 +102,18 @@
 }
 
 @media (min-width: 768px) {
-  .popular {
+  .popular__wrap {
     flex-direction: column;
     justify-content: center;
-    padding: 50px;
+    padding-top: 45px;
+    padding-bottom: 70px;
+
+    &::after {
+      height: 17px;
+      width: 768px;
+
+      background-size: 772px 17px;
+    }
   }
 
   .popular__header {
@@ -98,6 +122,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    box-sizing: border-box;
   }
 
   .popular__name {
@@ -146,7 +171,7 @@
 
   .popular__price-wrap {
     width: 50%;
-    padding: 45px 0;
+    margin-top: 45px;
     padding-right: 43px;
     box-sizing: border-box;
   }
@@ -163,9 +188,18 @@
 }
 
 @media (min-width: 1150px) {
-  .popular {
-    padding: 70px 50px 99px;
-    padding-right: 50px;
+  .popular__wrap {
+    padding-top: 70px;
+    padding-bottom: 100px;
+
+    &::after {
+      left: auto;
+
+      height: 30px;
+      width: 1050px;
+
+      background-size: 1050px 26px;
+    }
   }
 
   .popular__header {
@@ -203,7 +237,8 @@
   }
 
   .popular__price-wrap {
-    padding: 99px 58px 0 175px;
+    margin-top: 98px;
+    padding: 0 58px 0 175px;
   }
 
   .popular__properties {

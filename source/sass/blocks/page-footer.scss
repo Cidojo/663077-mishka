@@ -3,11 +3,20 @@
 }
 
 .page-footer__wrap {
-  padding: 0 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .page-footer__logo {
   display: none;
+
+  &[href]:hover {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: 768px) {
@@ -15,16 +24,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 34px 50px;
-    padding-bottom: 29px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .page-footer__logo {
     display: block;
   }
 
+  .page-footer__logo-image {
+    width: 102px;
+  }
+
   .page-footer__social {
     margin: 0;
-    margin-left: 95px;
+    margin-left: 76px;
   }
 }

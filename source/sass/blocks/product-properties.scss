@@ -14,9 +14,15 @@
 
 .product-properties__name {
   width: 85px;
-  padding-right: 15px;
+  padding-right: 11px;
 }
 
 .product-properties__row {
   border-bottom: 1px solid $border-color;
+}
+
+@media (min-width: $desktop-width) {
+  .product-properties__value {
+    padding: 6px 0 10px;
+  }
 }
