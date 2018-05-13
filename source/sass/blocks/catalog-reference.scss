@@ -1,4 +1,5 @@
 .catalog-reference {
+  display: flex;
   margin: 0 auto;
 
   border-top: 1px solid $border-color;
@@ -53,8 +54,8 @@
 
       background-image: url("../img/bg-zigzag-fill.svg");
       background-size: 770px 23px;
-      background-position: center 11px;
-      background-repeat-y: no-repeat;
+      background-position: bottom center;
+      background-repeat: repeat-x;
       background-color: transparent;
     }
   }

@@ -22,8 +22,8 @@
 
     background-image: url("../img/bg-zigzag-line.svg");
     background-size: 319px 9px;
-    background-position-x: 9px;
-    background-repeat-y: no-repeat;
+    background-position: bottom center;
+    background-repeat: repeat-x;
   }
 }
 
@@ -125,12 +125,11 @@
     background-repeat: no-repeat;
     background-position: 0 0;
 
-    &:after {
+    &::after {
       height: 17px;
       width: 768px;
 
       background-size: 772px 17px;
-      background-position-x: 17px;
     }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -201,14 +200,13 @@
 
     background-position-x: 50px;
 
-    &:after {
+    &::after {
       left: 50px;
 
       height: 26px;
       width: 1050px;
 
       background-size: 1050px 26px;
-      background-position-x: 26px;
     }
   }
 
