@@ -4,13 +4,14 @@
 
   line-height: 0;
 
-  border-top: 1px solid #ececec;
 }
 
 .page-header__wrap {
   position: relative;
 
   padding: 0;
+
+  border-top: 1px solid #ececec;
 }
 
 .page-header__logo {
@@ -29,12 +30,12 @@
 @media (min-width: $tablet-width) {
   .page-header {
     min-height: 88px;
-
-    border-top: none;
   }
 
   .page-header__wrap {
     padding: 0 50px;
+
+    border-top: none;
   }
 
   .page-header__logo {

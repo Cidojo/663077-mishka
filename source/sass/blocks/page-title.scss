@@ -1,4 +1,6 @@
 .page-title {
+  position: relative;
+
   margin: 0;
   padding: 70px 0 77px;
   width: 100%;
@@ -9,7 +11,21 @@
   text-align: center;
 
   background-color: #f1f1f1;
-  border-top: 1px solid #ececec;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: block;
+    width: 320px;
+    height: 1px;
+
+    background-color: #ececec;
+  }
 }
 
 .page-title--form-html {
@@ -26,6 +42,11 @@
 
     font-size: 43px;
     line-height: 50px;
+
+    &::before {
+      width: 768px;
+      background-color: rgba(68, 68, 68, 0.1);
+    }
 
     &::after {
       content: "";
@@ -52,6 +73,10 @@
 
     font-size: 53px;
     line-height: 57px;
+
+    &::before {
+      width: 1150px;
+    }
 
     &::after {
       height: 34px;

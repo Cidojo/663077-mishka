@@ -35,9 +35,7 @@
   border-bottom: 1px solid #ececec;
 }
 
-.main-nav__item--cart .main-nav__link::before {
-  content: "";
-
+.main-nav__icon-cart {
   position: absolute;
   top: 31px;
   left: 30px;
@@ -46,9 +44,7 @@
   width: 21px;
   height: 18px;
 
-  background-image: url("../img/icon-cart.svg");
-  background-position: center;
-  background-repeat: no-repeat;
+  fill: rgba(34, 31, 31, 0.2);
 }
 
 .main-nav__site-navigation .main-nav__item:first-of-type {
@@ -69,10 +65,18 @@
 
   &[href]:hover {
     color: rgba(0, 0, 0, 0.6);
+
+    & .main-nav__icon-cart {
+      fill: rgba(99, 209, 187, 1);
+    }
   }
 
   &[href]:active {
     color: rgba(0, 0, 0, 0.3);
+
+    & .main-nav__icon-cart {
+      fill: rgba(99, 209, 187, 0.3);
+    }
   }
 }
 
@@ -182,6 +186,8 @@
 
       font-weight: normal;
       text-align: right;
+
+      color: #444444;
     }
   }
 
@@ -207,7 +213,7 @@
     border-left: 1px solid #ececec;
   }
 
-  .main-nav__item--cart .main-nav__link::before {
+  .main-nav__icon-cart {
     top: 35px;
     left: 31px;
   }
