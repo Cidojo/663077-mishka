@@ -19,7 +19,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .page-footer__wrap {
     display: flex;
     justify-content: space-between;

@@ -9,14 +9,14 @@
   text-align: center;
 
   background-color: #f1f1f1;
-  border-top: 1px solid $border-color;
+  border-top: 1px solid #ececec;
 }
 
 .page-title--form-html {
   color: #231f20;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .page-title {
     position: relative;
 
@@ -45,7 +45,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .page-title {
     padding-top: 93px;
     padding-bottom: 105px;

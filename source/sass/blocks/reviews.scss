@@ -81,7 +81,7 @@
   height: 52px;
   box-sizing: border-box;
 
-  border: 1px solid $border-color;
+  border: 1px solid #ececec;
   background-color: #ffffff;
   cursor: pointer;
 
@@ -99,7 +99,7 @@
     background-image: url("../img/icon-left-arrow.svg");
     background-repeat: no-repeat;
     background-position: center;
-    border-right: 0.5px solid $border-color;
+    border-right: 0.5px solid #ececec;
   }
 
   &--next {
@@ -108,7 +108,7 @@
     background-image: url("../img/icon-right-arrow.svg");
     background-repeat: no-repeat;
     background-position: center;
-    border-left: 0.5px solid $border-color;
+    border-left: 0.5px solid #ececec;
   }
 }
 
@@ -123,7 +123,7 @@
   text-decoration: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .reviews__wrapper {
     min-height: 457px;
     padding-top: 78px;
@@ -196,7 +196,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .reviews {
     padding-top: 36px;
   }

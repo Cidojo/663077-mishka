@@ -20,7 +20,7 @@
   vertical-align: top;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .contacts-list__value {
     padding: 15px 0;
   }

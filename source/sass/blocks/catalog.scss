@@ -44,7 +44,7 @@
   flex-grow: 1;
   padding: 27px;
 
-  border: 1px solid $border-color;
+  border: 1px solid #ececec;
 }
 
 .catalog__item-title {
@@ -89,7 +89,7 @@
   line-height: 24px;
   font-weight: bold;
 
-  border-top: 1px solid $border-color;
+  border-top: 1px solid #ececec;
 }
 
 .catalog__add-to-cart {
@@ -115,7 +115,7 @@
   cursor: pointer;
 }
 
-@media (min-width: $tablet-width) and (max-width: 1149px) {
+@media (min-width: $tablet-width) and (max-width: $tablet-width--max) {
   .catalog {
     padding-top: 80px;
     padding-bottom: 50px;

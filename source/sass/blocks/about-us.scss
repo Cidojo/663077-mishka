@@ -106,7 +106,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .about-us {
     padding-top: 48px;
     padding-bottom: 82px;
@@ -169,7 +169,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .about-us {
     padding: 55px 225px;
   }

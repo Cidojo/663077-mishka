@@ -9,7 +9,7 @@
   padding: 0;
 
   border: none;
-  border-top: 1px solid $form-border;
+  border-top: 1px solid #63d1bb;
 }
 
 .order-form__group legend {
@@ -58,7 +58,7 @@
   &--comment {
     padding: 0;
 
-    border-top: 1px solid $form-border;
+    border-top: 1px solid #63d1bb;
   }
 }
 
@@ -103,7 +103,7 @@
 
   &:last-child {
     margin-bottom: 0;
-    border-top: 1px solid $form-border;
+    border-top: 1px solid #63d1bb;
   }
 
   &--phone::before {
@@ -252,7 +252,7 @@
   color: #444444;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .order-form__group-wrap:nth-of-type(2n) {
     background-color: #f1f1f1;
   }
@@ -428,7 +428,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .order-form__list {
 
     margin-left: 174px;

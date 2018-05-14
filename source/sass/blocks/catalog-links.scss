@@ -87,7 +87,7 @@
   opacity: 0.3;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .catalog-links {
     padding: 0 50px;
   }

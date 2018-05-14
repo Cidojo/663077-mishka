@@ -43,7 +43,7 @@
   background-repeat: no-repeat;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .social {
     border: none;
   }

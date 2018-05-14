@@ -2,7 +2,7 @@
   display: flex;
   margin: 0 auto;
 
-  border-top: 1px solid $border-color;
+  border-top: 1px solid #ececec;
   background-color: #f9f9f9;
 }
 
@@ -36,7 +36,7 @@
   color: #010000;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .catalog-reference {
     position: relative;
 
@@ -82,7 +82,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .catalog-reference {
     margin-top: -62px;
 

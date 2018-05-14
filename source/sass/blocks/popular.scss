@@ -101,7 +101,7 @@
   text-decoration: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .popular__wrap {
     flex-direction: column;
     justify-content: center;
@@ -187,7 +187,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .popular__wrap {
     padding-top: 70px;
     padding-bottom: 100px;

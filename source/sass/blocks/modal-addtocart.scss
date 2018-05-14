@@ -59,7 +59,7 @@
   color: #444444;
   text-align: center;
 
-  box-shadow: inset 0 0 0 2px $border-color;
+  box-shadow: inset 0 0 0 2px #ececec;
 }
 
 .modal-addtocart__submit {
@@ -75,7 +75,7 @@
   border: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .modal-addtocart {
     padding: 50px 108px 45px;
   }

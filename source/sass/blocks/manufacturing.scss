@@ -17,7 +17,7 @@
   line-height: 24px;
   font-weight: bold;
 
-  border: 1px solid $border-color;
+  border: 1px solid #ececec;
   border-bottom: 0;
 
   &::before {
@@ -76,7 +76,7 @@
   padding: 33px;
   padding-top: 26px;
 
-  border: 1px solid $border-color;
+  border: 1px solid #ececec;
   border-top: none;
 }
 
@@ -103,7 +103,7 @@
   text-decoration: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .manufacturing {
     min-height: 455px;
     padding-bottom: 62px;
@@ -150,7 +150,7 @@
     padding-top: 7px;
     padding-bottom: 45px;
 
-    border: 1px solid $border-color;
+    border: 1px solid #ececec;
     border-top: none;
   }
 
@@ -166,7 +166,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .manufacturing {
     align-items: flex-end;
     padding-bottom: 100px;
