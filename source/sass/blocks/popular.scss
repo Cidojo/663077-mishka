@@ -13,12 +13,12 @@
     left: 0;
     bottom: 0;
 
-    width: 320px;
+    width: 100%;
     height: 9px;
 
     background-image: url("../img/bg-zigzag-line.svg");
     background-size: 319px 9px;
-    background-position: bottom center;
+    background-position: 9px 0;
     background-repeat: repeat-x;
   }
 }
@@ -110,9 +110,10 @@
 
     &::after {
       height: 17px;
-      width: 768px;
+      // width: 768px;
 
       background-size: 772px 17px;
+      background-position: 18px 0;
     }
   }
 
@@ -195,10 +196,11 @@
     &::after {
       left: auto;
 
-      height: 30px;
+      height: 23px;
       width: 1050px;
 
-      background-size: 1050px 26px;
+      background-size: 1050px 23px;
+      background-position: 27px 0;
     }
   }
 

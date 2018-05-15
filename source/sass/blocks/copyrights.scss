@@ -1,6 +1,6 @@
 .copyrights {
-  margin-top: 25px;
-  padding-top: 21px;
+  margin-top: 20px;
+  padding: 0 38px;
 
   font-size: 0;
   text-align: center;
@@ -8,35 +8,50 @@
   border-top: 1px solid #ececec;
 }
 
-.copyrights__title {
-  display: inline-block;
-  margin: 0;
-  margin-right: 30px;
-  padding: 6px 0;
+.copyrights__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 183px;
+  padding-top: 20px;
 
   font-size: 19px;
   line-height: 18px;
   font-weight: bold;
-  vertical-align: top;
+
+  text-decoration: none;
+  color:  rgba(0, 0, 0, 1);
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
-.copyrights__link {
-  display: inline-block;
+.copyright__logo-htmlacademy {
   width: 27px;
   height: 34px;
 
-  font-size: 15px;
-  vertical-align: middle;
+  fill: rgba(99, 209, 187, 1);
+}
 
-  background-image: url("../img/logo-htmlacademy.svg");
-  background-repeat: no-repeat;
+.copyrights__link:hover .copyright__logo-htmlacademy {
+  fill: rgba(70, 193, 174, 1);
+}
+
+.copyrights__link:active .copyright__logo-htmlacademy {
+  fill: rgba(70, 193, 174, 0.3);
 }
 
 @media (min-width: $tablet-width) {
   .copyrights {
+    align-self: flex-start;
     margin: 0;
-    padding: 25px 0;
+    padding: 0;
 
     border-top: none;
+  }
+
+  .copyrights__link {
+    padding-top: 5px;
   }
 }

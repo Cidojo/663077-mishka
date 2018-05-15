@@ -10,12 +10,14 @@
 .page-footer__logo {
   display: none;
 
+  fill: rgba(35, 31, 32, 1);
+
   &[href]:hover {
-    opacity: 0.6;
+    fill: rgba(70, 193, 174, 0.6);
   }
 
   &[href]:active {
-    opacity: 0.3;
+    fill: rgba(70, 193, 174, 0.3);
   }
 }
 
@@ -23,9 +25,9 @@
   .page-footer__wrap {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    align-items: flex-end;
+    padding-top: 53px;
+    padding-bottom: 50px;
   }
 
   .page-footer__logo {

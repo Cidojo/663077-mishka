@@ -9,6 +9,10 @@
   </head>
   <body>
 
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
     <header class="page-header">
       <div class="page-header__wrap container">
         <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -128,16 +132,43 @@
     <footer class="page-footer">
       <div class="page-footer__wrap container">
         <a class="page-footer__logo" href="index.html">
-          <img class="page-footer__logo-image" src="img/logo-footer.svg" width="102" height="34" alt="Логотип магазина Mishka">
+          <svg class="page-footer__logo-image" width="102" height="34">
+            <use xlink:href="#logo-footer"></use>
+          </svg>
         </a>
         <ul class="page-footer__social social">
-          <li class="social__item"><a class="social__link social__link--instagramm" href="#" aria-label="Мы в Инстаграмм"><span class="visually-hidden">Инстаграм</span></a></li>
-          <li class="social__item"><a class="social__link social__link--facebook" href="#" aria-label="Мы в Фейсбук"><span class="visually-hidden">Фейсбук</span></a></li>
-          <li class="social__item"><a href="#" class="social__link social__link--twitter" aria-label="Мы в Твиттер"><span class="visually-hidden">Твиттер</span></a></li>
+          <li class="social__item">
+            <a class="social__link social__link--instagramm" href="#" aria-label="Мы в Инстаграмм">
+              <svg class="social__icon social__icon--insta" width="22" height="21">
+                <use xlink:href="#icon-insta"></use>
+              </svg>
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--fb" href="#" aria-label="Мы в Фейсбук">
+              <svg class="social__icon social__icon--fb" width="15" height="28">
+                <use xlink:href="#icon-fb"></use>
+              </svg>
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--twitter" aria-label="Мы в Твиттер">
+              <svg class="social__icon social__icon--twitter" width="23" height="20">
+                <use xlink:href="#icon-twitter"></use>
+              </svg>
+              <span class="visually-hidden">Твиттер</span>
+            </a>
+          </li>
         </ul>
         <div class="page-footer__copyrights copyrights">
-          <h3 class="copyrights__title">Разработано</h3>
-          <a class="copyrights__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
+          <a class="copyrights__link" href="https://htmlacademy.ru/intensive/adaptive">
+            Разработано <span class="visually-hidden">HTML Academy</span>
+            <svg class="copyright__logo-htmlacademy" width="27" height="34">
+              <use xlink:href="#logo-htmlacademy"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </footer>

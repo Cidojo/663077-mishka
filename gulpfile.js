@@ -50,6 +50,8 @@ gulp.task("copy", function () {
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "!source/img/icon-**",
+    "!source/img/logo-footer.svg",
+    "!source/img/logo-htmlacademy.svg",
     "source/js/**"
   ], {
     base: "source"
@@ -62,13 +64,11 @@ gulp.task("clean", function () {
   });
 
 gulp.task("sprite", function () {
-  return gulp.src("source/img/icon-*.svg")
-    .pipe(cheerio({
-      run: function ($) {
-        $("[fill]").removeAttr("fill");
-      },
-      parserOptions: {xmlMode: true}
-    }))
+  return gulp.src([
+    "source/img/icon-*.svg",
+    "source/img/logo-footer.svg",
+    "source/img/logo-htmlacademy.svg"
+  ])
     .pipe(svgstore({
       inlineSvg: true
     }))

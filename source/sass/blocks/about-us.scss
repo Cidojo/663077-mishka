@@ -32,77 +32,62 @@
   &:last-child {
     margin-bottom: 0;
   }
+}
 
-  &::before {
-    content: "";
+.about-us__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
 
-    position: absolute;
-    top: 0;
-    left: 0;
+  display: block;
 
-    display: block;
+  fill: #63d1bb;
 
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  &--ecology::before {
+  &--flower {
     top: 5px;
     left: 8px;
 
     width: 32px;
     height: 37px;
-
-    background-image: url("../img/icon-feature-flower.svg");
   }
 
-  &--style::before {
+  &--money {
     top: 6px;
 
     width: 47px;
     height: 27px;
-
-    background-image: url("../img/icon-feature-money.svg");
   }
 
-  &--social::before {
+  &--heart {
     top: 12px;
     left: 6px;
 
     width: 34px;
     height: 27px;
-
-    background-image: url("../img/icon-feature-heart.svg");
   }
 
-  &--handmade::before {
+  &--ball {
     top: 8px;
     left: 2px;
 
     width: 35px;
     height: 34px;
-
-    background-image: url("../img/icon-feature-ball.svg");
   }
 
-  &--national-manufacturer::before {
+  &--rocket {
     top: 9px;
     left: -7px;
 
     width: 55px;
     height: 23px;
-
-    background-image: url("../img/icon-feature-rocket.svg");
   }
 
-  &--present-wrap::before {
+  &--gift {
     top: 7px;
     left: 3px;
 
     width: 33px;
     height: 32px;
-
-    background-image: url("../img/icon-feature-gift.svg");
   }
 }
 
@@ -138,11 +123,6 @@
       margin-bottom: 0;
     }
 
-    &--ecology::before {
-      width: 33px;
-      height: 38px;
-    }
-
     &--ecology {
       order: 1;
     }
@@ -166,6 +146,13 @@
     &--present-wrap {
       order: 6;
     }
+  }
+}
+
+.about-us__icon {
+  &--flower {
+    width: 33px;
+    height: 38px;
   }
 }
 

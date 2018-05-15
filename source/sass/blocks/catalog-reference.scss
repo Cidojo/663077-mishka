@@ -42,7 +42,6 @@
 
     margin-top: -62px;
 
-
     &::after {
       content: "";
 
@@ -51,18 +50,18 @@
       bottom: 0;
 
       width: 100%;
-      height: 23px;
+      height: 12px;
 
       background-image: url("../img/bg-zigzag-fill.svg");
-      background-size: 770px 23px;
-      background-position: bottom center;
+      background-size: 770px 24px;
+      background-position: center 0;
       background-repeat: repeat-x;
       background-color: transparent;
     }
   }
 
   .catalog-reference__wrap {
-    min-height: 745px;
+    min-height: 746px;
     padding: 0;
 
     background-image: url("../img/hero-tablet@1x.jpg");
@@ -81,6 +80,8 @@
 
     font-size: 43px;
     line-height: 50px;
+
+    color: #000000;
   }
 }
 
@@ -89,10 +90,9 @@
     margin-top: -62px;
 
     &::after {
-      height: 37px;
+      height: 17px;
 
-      background-size: 1250px 37px;
-      background-position: center 17px;
+      background-size: 1150px 34px;
     }
   }
 
