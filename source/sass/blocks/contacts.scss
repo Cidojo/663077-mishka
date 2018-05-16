@@ -21,13 +21,27 @@
   margin-top: 10px;
 }
 
+.contacts__map-wrap {
+  position: relative;
+
+  margin-top: 23px;
+
+  line-height: 0;
+}
+
+.contacts__map-api {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 332px;
+  height: 457px;
+}
+
 .contacts__map-link {
   position: relative;
 
   display: block;
-  margin-top: 23px;
-
-  line-height: 0;
 }
 
 .contacts__icon-pin {
@@ -82,9 +96,17 @@
     margin-top: 34px;
   }
 
+  .contacts__map-wrap {
+    margin-top: 41px;
+  }
+
   .contacts__map-link {
     height: 457px;
-    margin-top: 41px;
+  }
+
+  .contacts__map-api {
+    width: 768px;
+    height: 457px;
   }
 
   .contacts__icon-pin {
@@ -128,13 +150,22 @@
     line-height: 57px;
   }
 
-  .contacts__map-link {
+  .contacts__map-wrap {
     order: -1;
 
     width: 50%;
     margin: 0;
     margin-left: 50%;
     margin-bottom: -457px;
+    }
+
+  .contacts__map-link {
+    height: 457px;
+  }
+
+  .contacts__map-api {
+    width: 525px;
+    height: 457px;
   }
 
   .contacts__icon-pin {
@@ -148,7 +179,7 @@
   }
 
   .contacts__writeus {
-    margin-top: 65px;
+    margin-top: 64px;
     margin-left: 175px;
   }
 }

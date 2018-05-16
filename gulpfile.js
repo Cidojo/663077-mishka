@@ -15,7 +15,6 @@ var server = require("browser-sync").create();
 var run = require("run-sequence");
 var del = require("del");
 var rename = require("gulp-rename");
-var cheerio = require("gulp-cheerio");
 var jsminify = require("gulp-minify");
 
 gulp.task("style", function() {
@@ -61,6 +60,11 @@ gulp.task("copy", function () {
   .pipe(gulp.dest("build"));
 });
 
+gulp.task("copy-pin", function () {
+  return gulp.src("source/img/icon-map-pin.svg")
+  .pipe(gulp.dest("build/img"));
+});
+
 gulp.task("clean", function () {
     return del("build");
   });
@@ -87,7 +91,10 @@ gulp.task("html", function () {
 });
 
 gulp.task("script", function () {
-  return gulp.src("source/js/script.js")
+  return gulp.src([
+    "source/js/*.js",
+    "!source/js/**.min.js"
+  ])
 
   .pipe(jsminify({
     ext:{
@@ -101,5 +108,5 @@ gulp.task("script", function () {
 var minify = require('gulp-minify');
 
 gulp.task("build", function(done) {
-  run("clean", "copy", "style", "sprite", "html", "script", done);
+  run("clean", "copy", "copy-pin","style", "sprite", "html", "script", done);
 });
