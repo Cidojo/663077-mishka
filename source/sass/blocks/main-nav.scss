@@ -65,19 +65,19 @@
 
   &[href]:hover {
     color: rgba(0, 0, 0, 0.6);
-
-    & .main-nav__icon-cart {
-      fill: rgba(99, 209, 187, 1);
-    }
   }
 
   &[href]:active {
     color: rgba(0, 0, 0, 0.3);
-
-    & .main-nav__icon-cart {
-      fill: rgba(99, 209, 187, 0.3);
-    }
   }
+}
+
+.main-nav__link[href]:hover .main-nav__icon-cart {
+  fill: rgba(99, 209, 187, 1);
+}
+
+.main-nav__link[href]:active .main-nav__icon-cart {
+  fill: rgba(99, 209, 187, 0.3);
 }
 
 @media (max-width: $mobile-width--max) {
