@@ -4,6 +4,8 @@ var mishka_placemark;
 ymaps.ready(init);
 
 function init() {
+  document.getElementById("map").classList.remove("contacts__map-api--nojs");
+
   mishka_map = new ymaps.Map("map", { center: [59.93863106, 30.32305450], zoom: 17
   });
 

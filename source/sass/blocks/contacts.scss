@@ -36,6 +36,10 @@
 
   width: 332px;
   height: 457px;
+
+  &--nojs {
+    display: none;
+  }
 }
 
 .contacts__map-link {
