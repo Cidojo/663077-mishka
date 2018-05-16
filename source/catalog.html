@@ -64,7 +64,7 @@
       <section class="catalog container">
         <ul class="catalog__list">
           <li class="catalog__item">
-            <a class="catalog__image-link" href="#">
+            <a class="catalog__image-link" href="catalog-hare.html">
               <picture>
                 <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
@@ -72,14 +72,14 @@
               </picture>
             </a>
             <div class="catalog__item-description">
-              <h3 class="catalog__item-title"><a class="catalog__title-link" href="#">Зайчик-попрыгайчик</a></h3>
+              <h3 class="catalog__item-title"><a class="catalog__title-link" href="catalog-hare.html">Зайчик-попрыгайчик</a></h3>
               <p class="catalog__item-properties">Рост 30 см, вес 200 г</p>
               <p class="catalog__item-price">1 200 руб.</p>
               <button class="catalog__add-to-cart" aria-label="Добавить в корзину">Добавить в корзину</button>
             </div>
           </li>
           <li class="catalog__item">
-            <a class="catalog__image-link" href="#">
+            <a class="catalog__image-link" href="catalog-bowl.html">
               <picture>
                 <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
@@ -87,14 +87,14 @@
               </picture>
             </a>
             <div class="catalog__item-description">
-              <h3 class="catalog__item-title"><a class="catalog__title-link" href="#">Корзинка для белья</a></h3>
+              <h3 class="catalog__item-title"><a class="catalog__title-link" href="catalog-bowl.html">Корзинка для белья</a></h3>
               <p class="catalog__item-properties">Диаметр 15 см, высота 10 см</p>
               <p class="catalog__item-price">690 руб.</p>
               <button class="catalog__add-to-cart" aria-label="Добавить в корзину">Добавить в корзину</button>
             </div>
           </li>
           <li class="catalog__item">
-            <a class="catalog__image-link" href="#">
+            <a class="catalog__image-link" href="catalog-toy-bowl.html">
               <picture>
                 <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
@@ -102,7 +102,7 @@
               </picture>
             </a>
             <div class="catalog__item-description">
-              <h3 class="catalog__item-title"><a class="catalog__title-link" href="#">Большая корзинка для игрушек</a></h3>
+              <h3 class="catalog__item-title"><a class="catalog__title-link" href="catalog-toy-bowl.html">Большая корзинка для игрушек</a></h3>
               <p class="catalog__item-properties">Диаметр 30 см, высота 30 см</p>
               <p class="catalog__item-price">1 500 руб.</p>
               <button class="catalog__add-to-cart" aria-label="Добавить в корзину">Добавить в корзину</button>
@@ -173,29 +173,30 @@
       </div>
     </footer>
 
-    <section class="modal">
-      <form class="modal-addtocart" action="https://echo.htmlacademy.ru" method="post">
+    <section class="modal-addtocart">
+      <form class="modal-addtocart__form" action="https://echo.htmlacademy.ru" method="post">
         <h2 class="modal-addtocart__title">Добавить в корзину</h2>
         <p class="modal-addtocart__description">Выберите размер:</p>
         <ul class="modal-addtocart__list">
-          <li class="modal-addtocart__item modal-addtocart__item--current">
-            <input class="visually-hidden" id="modal-addtocart__s-size" type="radio" name="size" value="s" checked>
-            <label for="modal-addtocart__s-size">S</label>
+          <li class="modal-addtocart__item">
+            <input class="modal-addtocart__radio visually-hidden" id="modal-addtocart__s-size" type="radio" name="size" value="s" checked>
+            <label class="modal-addtocart__label modal-addtocart__label--current" for="modal-addtocart__s-size">S</label>
           </li>
           <li class="modal-addtocart__item">
-            <input class="visually-hidden" id="modal-addtocart__m-size" type="radio" name="size" value="m" checked>
-            <label for="modal-addtocart__m-size">M</label>
+            <input class="modal-addtocart__radio visually-hidden" id="modal-addtocart__m-size" type="radio" name="size" value="m">
+            <label class="modal-addtocart__label" for="modal-addtocart__m-size">M</label>
           </li>
           <li class="modal-addtocart__item">
-            <input class="visually-hidden" id="modal-addtocart__l-size" type="radio" name="size" value="l" checked>
-            <label for="modal-addtocart__l-size">L</label>
+            <input class="modal-addtocart__radio visually-hidden" id="modal-addtocart__l-size" type="radio" name="size" value="l">
+            <label class="modal-addtocart__label" for="modal-addtocart__l-size">L</label>
           </li>
         </ul>
         <button class="modal-addtocart__submit button" type="submit">Добавить</button>
       </form>
-      <a class="modal__close"><span class="visually-hidden">Закрыть</span></a>
+      <a class="modal-addtocart__button-close"><span class="visually-hidden">Закрыть</span></a>
     </section>
 
     <script src="js/picturefill.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

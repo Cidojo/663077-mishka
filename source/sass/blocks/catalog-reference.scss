@@ -25,7 +25,8 @@
 }
 
 .catalog-reference__slogan {
-  margin: 0 30px;
+  width: 260px;
+  margin: 0 auto;
   margin-top: 70px;
 
   font-size: 27px;
@@ -75,7 +76,7 @@
   }
 
   .catalog-reference__slogan {
-    margin: 0 50px;
+    width: 720px;
     margin-top: 153px;
 
     font-size: 43px;
@@ -92,7 +93,7 @@
     &::after {
       height: 17px;
 
-      background-size: 1150px 34px;
+      background-size: 1250px 37px;
     }
   }
 
@@ -109,7 +110,6 @@
   }
 
   .catalog-reference__slogan {
-    margin: 0 70px;
     margin-top: 153px;
 
     font-size: 53px;

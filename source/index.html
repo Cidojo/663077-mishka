@@ -34,7 +34,6 @@
             </svg>
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <!-- <div class="main-nav__wrap"> -->
             <ul class="main-nav__site-navigation">
               <li class="main-nav__item">
                 <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
@@ -57,7 +56,7 @@
                 </form>
               </li>
               <li class="main-nav__item main-nav__item--cart">
-                <a class="main-nav__link" href="#">
+                <a class="main-nav__link" href="cart.html">
                   <svg class="main-nav__icon-cart" width="21" height="18">
                     <use xlink:href="#icon-cart"></use>
                   </svg>
@@ -67,16 +66,15 @@
             </ul>
             <ul class="main-nav__extra-list">
               <li class="main-nav__item">
-                <a class="main-nav__link" href="#">Новые поступления</a>
+                <a class="main-nav__link" href="catalog-new.html">Новые поступления</a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link" href="#">Распродажа</a>
+                <a class="main-nav__link" href="catalog-sale.html">Распродажа</a>
               </li>
               <li class="main-nav__item main-nav__item--delivery">
                 Бесплатная доставка по России
               </li>
             </ul>
-          <!-- </div> -->
         </nav>
       </div>
     </header>
@@ -90,7 +88,7 @@
           <p class="catalog-reference__slogan">Милые штуки ручной<br> работы для дома</p>
           <ul class="catalog-reference__list catalog-links">
             <li class="catalog-links__item catalog-links__item--interior">
-              <a class="catalog-links__link" href="#">
+              <a class="catalog-links__link" href="catalog-interior.html">
                 <svg class="catalog-links__icon-interior" width="21" height="36">
                   <use xlink:href="#icon-interior"></use>
                 </svg>
@@ -98,7 +96,7 @@
               </a>
             </li>
             <li class="catalog-links__item catalog-links__item--toy">
-              <a class="catalog-links__link" href="#">
+              <a class="catalog-links__link" href="catalog-toys.html">
                 <svg class="catalog-links__icon-toy" width="23" height="27">
                   <use xlink:href="#icon-toy"></use>
                 </svg>
@@ -219,7 +217,7 @@
               <span class="visually-hidden">Вперед</span>
             </button>
           </div>
-          <a class="reviews__write-button button" href="#">Написать</a>
+          <a class="reviews__write-button button" href="write-a-review.html">Написать</a>
         </div>
       </section>
 
@@ -228,18 +226,16 @@
         <svg class="contacts__icon-flag" width="47" height="81">
           <use xlink:href="#icon-flag"></use>
         </svg>
-        <table class="contacts__data contacts-list">
-          <tbody>
-            <tr>
-              <td class="contacts-list__field">e&#8209;mail:</td>
-              <td class="contacts-list__value">info@mimimishkashop.ru</td>
-            </tr>
-            <tr>
-              <td class="contacts-list__field">адрес:</td>
-              <td class="contacts-list__value">г.Санкт-Петербург, ул.Большая Конюшенная,<br> д.19/8, офис 101</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="contacts__data contacts-list">
+            <div class="contacts-list__row">
+              <p class="contacts-list__field">e&#8209;mail:</p>
+              <p class="contacts-list__value contacts-list__value--email"><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></p>
+            </div>
+            <div class="contacts-list__row">
+              <p class="contacts-list__field">адрес:</p>
+              <p class="contacts-list__value">г. Санкт-Петербург, ул.&nbsp;Большая Конюшенная,<br> д. 19/8, офис 101</p>
+            </div>
+        </div>
         <a class="contacts__map-link" href="#">
           <svg class="contacts__icon-pin" width="67" height="100">
             <use xlink:href="#icon-map-pin"></use>
@@ -250,7 +246,7 @@
             <img class="contacts__map-image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="г.Санкт-Петербург, ул.Большая Конюшенная, д.19/8, офис 101">
           </picture>
         </a>
-        <a class="contacts__writeus button" href="#">Напишите нам</a>
+        <a class="contacts__writeus button" href="write-to-us.html">Напишите нам</a>
       </section>
     </main>
 
@@ -298,27 +294,27 @@
       </div>
     </footer>
 
-    <section class="modal">
-      <form class="modal-addtocart" action="https://echo.htmlacademy.ru" method="post">
+    <section class="modal-addtocart">
+      <form class="modal-addtocart__form" action="https://echo.htmlacademy.ru" method="post">
         <h2 class="modal-addtocart__title">Добавить в корзину</h2>
         <p class="modal-addtocart__description">Выберите размер:</p>
         <ul class="modal-addtocart__list">
-          <li class="modal-addtocart__item modal-addtocart__item--current">
-            <input class="visually-hidden" id="modal-addtocart__s-size" type="radio" name="size" value="s" checked>
-            <label for="modal-addtocart__s-size">S</label>
+          <li class="modal-addtocart__item">
+            <input class="modal-addtocart__radio visually-hidden" id="modal-addtocart__s-size" type="radio" name="size" value="s" checked>
+            <label class="modal-addtocart__label modal-addtocart__label--current" for="modal-addtocart__s-size">S</label>
           </li>
           <li class="modal-addtocart__item">
-            <input class="visually-hidden" id="modal-addtocart__m-size" type="radio" name="size" value="m" checked>
-            <label for="modal-addtocart__m-size">M</label>
+            <input class="modal-addtocart__radio visually-hidden" id="modal-addtocart__m-size" type="radio" name="size" value="m">
+            <label class="modal-addtocart__label" for="modal-addtocart__m-size">M</label>
           </li>
           <li class="modal-addtocart__item">
-            <input class="visually-hidden" id="modal-addtocart__l-size" type="radio" name="size" value="l" checked>
-            <label for="modal-addtocart__l-size">L</label>
+            <input class="modal-addtocart__radio visually-hidden" id="modal-addtocart__l-size" type="radio" name="size" value="l">
+            <label class="modal-addtocart__label" for="modal-addtocart__l-size">L</label>
           </li>
         </ul>
         <button class="modal-addtocart__submit button" type="submit">Добавить</button>
       </form>
-      <a class="modal__close"><span class="visually-hidden">Закрыть</span></a>
+      <a class="modal-addtocart__button-close"><span class="visually-hidden">Закрыть</span></a>
     </section>
 
     <script src="js/picturefill.min.js"></script>

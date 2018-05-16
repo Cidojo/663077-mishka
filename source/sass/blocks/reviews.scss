@@ -52,15 +52,18 @@
 
 .reviews__author {
   display: block;
-  margin-top: 25px;
+  margin-top: 27px;
 
   font-size: 17px;
-  line-height: 30px;
+  line-height: 24px;
   font-weight: bold;
   font-style: normal;
 }
 
 .reviews__author-link {
+  display: block;
+  margin-top: 2px;
+
   font-size: 17px;
   line-height: 30px;
   font-weight: normal;
@@ -70,13 +73,13 @@
 
 .reviews__button-wrap {
   height: 52px;
-  margin-top: 28px;
+  margin-top: 30px;
 }
 
 .reviews__button {
   margin: 0;
 
-  padding: 14px 0;
+  padding: 12px 0;
   width: 130px;
   height: 52px;
   box-sizing: border-box;
@@ -111,7 +114,7 @@
 .reviews__write-button {
   margin-top: 38px;
 
-  font-size: 17px;
+  font-size: 18px;
   line-height: 20px;
   font-weight: bold;
 
@@ -165,9 +168,13 @@
 
   .reviews__author {
     display: block;
-    margin-top: 55px;
+    margin-top: 57px;
 
     font-size: 18px;
+  }
+
+  .reviews__author-link {
+    margin-top: 4px;
   }
 
   .reviews__button {
@@ -190,6 +197,8 @@
     width: 175px;
     margin: 0;
     margin-top: 2px;
+
+    font-size: 17px;
   }
 }
 
@@ -201,7 +210,7 @@
   .reviews__wrapper {
     padding-top: 70px;
     padding-left: 225px;
-    padding-bottom: 186px;
+    padding-bottom: 184px;
 
     background-position-x: 50px;
 
@@ -224,7 +233,7 @@
   }
 
   .reviews__author {
-    margin-top: 35px;
+    margin-top: 39px;
 
     font-size: 17px;
   }

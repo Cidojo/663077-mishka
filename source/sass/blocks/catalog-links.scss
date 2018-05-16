@@ -84,11 +84,14 @@
   }
 
   .catalog-links__item {
+    position: relative;
+
     width: 50%;
     box-sizing: border-box;
 
     &:hover {
-      transform: translateY(-5px);
+      margin-top: -5px;
+      padding-bottom: 5px;
 
       background-color: #63d1bb;
 
