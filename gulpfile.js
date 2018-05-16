@@ -16,6 +16,7 @@ var run = require("run-sequence");
 var del = require("del");
 var rename = require("gulp-rename");
 var cheerio = require("gulp-cheerio");
+var jsminify = require("gulp-minify");
 
 gulp.task("style", function() {
   gulp.src("source/sass/style.scss")
@@ -86,11 +87,19 @@ gulp.task("html", function () {
 });
 
 gulp.task("script", function () {
-  return gulp.src("source/js/*.js")
+  return gulp.src("source/js/script.js")
 
+  .pipe(jsminify({
+    ext:{
+        src:".js",
+        min:".min.js"
+    }
+  }))
   .pipe(gulp.dest("build/js"));
 });
 
+var minify = require('gulp-minify');
+
 gulp.task("build", function(done) {
-  run("clean", "copy", "style", "sprite", "html", done);
+  run("clean", "copy", "style", "sprite", "html", "script", done);
 });
