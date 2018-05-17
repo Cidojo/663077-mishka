@@ -155,7 +155,7 @@
     border: 2px solid rgba(68, 68, 68, 0.3);
   }
 
-  &--checkbox{
+  &--checkbox {
     z-index: 1;
 
     &::before {
@@ -199,7 +199,7 @@
 .order-form__list--type input[disabled] + label {
   color: rgba(68, 68, 68, 0.1);
 
-  &::before{
+  &::before {
     border: 2px solid rgba(68, 68, 68, 0.1);
   }
 }
@@ -221,7 +221,7 @@
 .order-form__list--color input[disabled] + label {
   color: rgba(68, 68, 68, 0.1);
 
-  &::before{
+  &::before {
     border: 2px solid rgba(68, 68, 68, 0.1);
   }
 }
