@@ -129,6 +129,8 @@
   line-height: 18px;
   font-weight: bold;
 
+  cursor: pointer;
+
   &--radio::before {
     content: "";
 
@@ -143,6 +145,7 @@
     border: 2px solid #444444;
     border-radius: 50%;
     background-color: #ffffff;
+    cursor: pointer;
   }
 
   &--radio:hover::before {
@@ -156,6 +159,8 @@
   &--checkbox {
     z-index: 1;
 
+    cursor: pointer;
+
     &::before {
       content: "";
 
@@ -168,6 +173,7 @@
       box-sizing: border-box;
 
       border: 2px solid #444444;
+      cursor: pointer;
     }
   }
 
