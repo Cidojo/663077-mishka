@@ -82,6 +82,15 @@ gulp.task("sprite", function () {
     .pipe(gulp.dest("build/img"));
 });
 
+gulp.task("webp", function() {
+  gulp.src([
+    "source/img/*.jpg",
+    "source/img/*.png"
+  ])
+    .pipe(webp())
+    .pipe(gulp.dest("build/img"))
+});
+
 gulp.task("html", function () {
   return gulp.src("source/*.html")
     .pipe(posthtml([
@@ -108,5 +117,5 @@ gulp.task("script", function () {
 var minify = require('gulp-minify');
 
 gulp.task("build", function(done) {
-  run("clean", "copy", "copy-pin","style", "sprite", "html", "script", done);
+  run("clean", "copy", "copy-pin","style", "sprite", "webp", "html", "script", done);
 });

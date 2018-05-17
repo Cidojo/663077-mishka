@@ -22,7 +22,6 @@
 
   .form-main__intro {
     padding-top: 72px;
-    padding-bottom: 6px;
 
     font-size: 17px;
     line-height: 30px;
@@ -31,6 +30,7 @@
 
 @media (min-width: $desktop-width) {
   .form-main__intro {
-    padding: 120px 225px 6px;
+    padding: 0 225px;
+    padding-top: 120px;
   }
 }

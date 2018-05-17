@@ -40,10 +40,10 @@ if (modalAddToCart) {
 
     window.addEventListener("keydown", function (esc) {
       if (esc.keyCode === 27) {
-          esc.preventDefault();
-          if (modalAddToCart.classList.contains("modal-addtocart--show")) {
-            modalAddToCart.classList.remove("modal-addtocart--show");
-          }
+        esc.preventDefault();
+        if (modalAddToCart.classList.contains("modal-addtocart--show")) {
+          modalAddToCart.classList.remove("modal-addtocart--show");
+        }
       }
     });
   });
