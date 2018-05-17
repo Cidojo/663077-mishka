@@ -30,11 +30,11 @@
   line-height: 0;
 }
 
-.catalog__image-link:hover + .catalog__item-description {
+.catalog__item:hover .catalog__item-description {
   box-shadow: 0 6px 10px 0 #ececec;
 }
 
-.catalog__image-link:active + .catalog__item-description {
+.catalog__item:active .catalog__item-description {
   box-shadow: 0 3px 5px 0 #ececec;
 }
 

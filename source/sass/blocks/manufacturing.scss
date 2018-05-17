@@ -1,9 +1,20 @@
 .manufacturing {
-  display: flex;
-  flex-direction: column;
   padding-bottom: 55px;
 
   background-color: #ffffff;
+}
+
+.manufacturing__wrap {
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 #ececec;
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 #ececec;
+  }
 }
 
 .manufacturing__title {
@@ -154,8 +165,11 @@
 
 @media (min-width: $desktop-width) {
   .manufacturing {
-    align-items: flex-end;
     padding-bottom: 103px;
+  }
+
+  .manufacturing__wrap {
+    align-items: flex-end;
   }
 
   .manufacturing__title {
@@ -175,7 +189,7 @@
 
   .manufacturing__intro-wrap {
     width: 368px;
-    padding: 33px 10px 61px 80px;
+    padding: 33px 10px 62px 80px;
     box-sizing: border-box;
 
     border-left: 0;

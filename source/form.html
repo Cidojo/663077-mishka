@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link rel="preload" href="/fonts/opensans.woff2" as="font">
+    <link rel="preload" href="/fonts/opensansbold.woff2" as="font">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
@@ -105,26 +107,44 @@
                     <li class="order-form__item">
                       <input class="visually-hidden" id="order-form__clr-white" type="checkbox" name="order-color--white" checked>
                       <label class="order-form__label order-form__label--checkbox" for="order-form__clr-white">Белый</label>
+                      <svg class="order-form__icon-tick" width="22" height="16">
+                        <use xlink:href="#icon-tick"></use>
+                      </svg>
                     </li>
                     <li class="order-form__item">
                       <input class="visually-hidden" id="order-form__clr-grey" type="checkbox" name="order-color--grey" checked>
                       <label class="order-form__label order-form__label--checkbox" for="order-form__clr-grey">Серый</label>
+                      <svg class="order-form__icon-tick" width="22" height="16">
+                        <use xlink:href="#icon-tick"></use>
+                      </svg>
                     </li>
                     <li class="order-form__item">
                       <input class="visually-hidden" id="order-form__clr-tiffany" type="checkbox" name="order-color--tiffany">
                       <label class="order-form__label order-form__label--checkbox" for="order-form__clr-tiffany">&laquo;Тиффани&raquo;</label>
+                      <svg class="order-form__icon-tick" width="22" height="16">
+                        <use xlink:href="#icon-tick"></use>
+                      </svg>
                     </li>
                     <li class="order-form__item">
                       <input class="visually-hidden" id="order-form__clr-black" type="checkbox" name="order-color--black">
                       <label class="order-form__label order-form__label--checkbox" for="order-form__clr-black">Черный</label>
+                      <svg class="order-form__icon-tick" width="22" height="16">
+                        <use xlink:href="#icon-tick"></use>
+                      </svg>
                     </li>
                     <li class="order-form__item">
                       <input class="visually-hidden" id="order-form__clr-pink" type="checkbox" name="order-color--pink">
                       <label class="order-form__label order-form__label--checkbox" for="order-form__clr-pink">Розовый</label>
+                      <svg class="order-form__icon-tick" width="22" height="16">
+                        <use xlink:href="#icon-tick"></use>
+                      </svg>
                     </li>
                     <li class="order-form__item">
                       <input class="visually-hidden" id="order-form__clr-orange" type="checkbox" name="order-color--orange">
                       <label class="order-form__label order-form__label--checkbox" for="order-form__clr-orange">Оранжевый</label>
+                      <svg class="order-form__icon-tick" width="22" height="16">
+                        <use xlink:href="#icon-tick"></use>
+                      </svg>
                     </li>
                   </ul>
                 </fieldset>
@@ -155,10 +175,16 @@
                     <li class="order-form__item order-form__item--phone">
                       <label class="order-form__legend" for="order-form__phone">Тел</label>
                       <input class="order-form__field" id="order-form__phone" type="tel" name="customer--phone" placeholder="+7 XXX XX XX*" required>
+                      <svg class="order-form__icon-phone" width="25" height="24">
+                        <use xlink:href="#icon-phone"></use>
+                      </svg>
                     </li>
                     <li class="order-form__item order-form__item--mail">
                       <label class="order-form__legend" for="order-form__email">E&#8209;mail</label>
                       <input class="order-form__field" id="order-form__email" type="email" name="customer--email" placeholder="Ваш Email*" required>
+                      <svg class="order-form__icon-mail" width="32" height="21">
+                        <use xlink:href="#icon-mail"></use>
+                      </svg>
                     </li>
                   </ul>
                 </fieldset>
