@@ -86,23 +86,23 @@
           <p class="form-main__intro container">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
           <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="order-form__group-wrap">
-              <fieldset class="order-form__group container container--form">
-                <legend><span class="order-form__legend">Тип</span></legend>
-                  <ul class="order-form__list order-form__list--type" role="none">
-                    <li class="order-form__item">
-                      <input class="visually-hidden" id="order-form__accessory" type="radio" name="order-type" value="Аксессуар для интерьера" checked>
-                      <label class="order-form__label order-form__label--radio" for="order-form__accessory">Аксессуар для интерьера</label>
-                    </li>
-                    <li class="order-form__item">
-                      <input class="visually-hidden" id="order-form__toy" type="radio" name="order-type" value="Детская игрушка">
-                      <label class="order-form__label order-form__label--radio" for="order-form__toy">Детская игрушка</label>
-                    </li>
-                  </ul>
-              </fieldset>
+              <div class="order-form__group container container--form">
+                <h3 class="order-form__legend">Тип</h3>
+                <ul class="order-form__list order-form__list--type" role="none">
+                  <li class="order-form__item">
+                    <input class="visually-hidden" id="order-form__accessory" type="radio" name="order-type" value="Аксессуар для интерьера" checked>
+                    <label class="order-form__label order-form__label--radio" for="order-form__accessory">Аксессуар для интерьера</label>
+                  </li>
+                  <li class="order-form__item">
+                    <input class="visually-hidden" id="order-form__toy" type="radio" name="order-type" value="Детская игрушка">
+                    <label class="order-form__label order-form__label--radio" for="order-form__toy">Детская игрушка</label>
+                  </li>
+                </ul>
+              </div>
             </div>
             <div class="order-form__group-wrap">
-              <fieldset class="order-form__group container container--form">
-                  <legend><span class="order-form__legend">Цвет</span></legend>
+              <div class="order-form__group container container--form">
+                  <h3 class="order-form__legend">Цвет</h3>
                   <ul class="order-form__list order-form__list--color" role="none">
                     <li class="order-form__item">
                       <input class="visually-hidden" id="order-form__clr-white" type="checkbox" name="order-color--white" checked>
@@ -147,11 +147,11 @@
                       </svg>
                     </li>
                   </ul>
-                </fieldset>
+                </div>
               </div>
               <div class="order-form__group-wrap">
-                <fieldset class="order-form__group container container--form">
-                  <legend><span class="order-form__legend">ФИО</span></legend>
+                <div class="order-form__group container container--form">
+                  <h3 class="order-form__legend">ФИО</h3>
                   <ul class="order-form__list order-form__list--name" role="none">
                     <li class="order-form__item">
                       <label class="order-form__label" for="order-form__name">Имя:</label>
@@ -166,11 +166,11 @@
                       <input class="order-form__field" id="order-form__patronymic" type="text" name="customer--patronymic" placeholder="Отчество, если желаете" required>
                     </li>
                   </ul>
-                </fieldset>
+                </h3>
               </div>
               <div class="order-form__group-wrap">
-                <fieldset class="order-form__group container container--form">
-                  <legend class="visually-hidden"><span>Ваши Контакты</span></legend>
+                <div class="order-form__group container container--form">
+                  <h3 class="visually-hidden">Ваши Контакты</h3>
                   <ul class="order-form__list order-form__list--contacts">
                     <li class="order-form__item order-form__item--phone">
                       <label class="order-form__legend" for="order-form__phone">Тел</label>
@@ -187,7 +187,7 @@
                       </svg>
                     </li>
                   </ul>
-                </fieldset>
+                </div>
               </div>
               <div class="order-form__group-wrap">
                 <div class="order-form__list order-form__list--comment container container--form">
