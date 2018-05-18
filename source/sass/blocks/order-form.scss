@@ -25,6 +25,14 @@
   text-transform: uppercase;
   color: #63d1bb;
   background-color: #ffffff;
+
+  &--phone {
+    width: 42px;
+  }
+
+  &--mail {
+    width: 61px;
+  }
 }
 
 .order-form__list {
