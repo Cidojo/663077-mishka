@@ -2837,21 +2837,3 @@ input[type="radio"].visually-hidden {
     right: 4px; }
   .order-form__misc {
     width: 700px; } }
-
-body {
-  background-image: url("../preview/mishka-form-mobile.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  background-size: 320px auto;
-  min-height: 4500px;
-  opacity: 0.4; }
-
-@media (min-width: 768px) {
-  body {
-    background-image: url("../preview/mishka-form-tablet.jpg");
-    background-size: 768px auto; } }
-
-@media (min-width: 1150px) {
-  body {
-    background-image: url("../preview/mishka-form-desktop.jpg");
-    background-size: 1150px auto; } }
